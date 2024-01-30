@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Learning diary",
+    "section": "",
+    "text": "About\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Week 1.html#summary",
+    "href": "Week 1.html#summary",
+    "title": "1  Week 1",
+    "section": "1.1 Summary",
+    "text": "1.1 Summary\nIn this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (satellites, drones, planes…) . We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.\n\n1.1.1 Remote sensing definition\nAccording to NASA “Remote sensing is the acquiring of information from a distance.”"
+  },
+  {
+    "objectID": "Week 1.html#application",
+    "href": "Week 1.html#application",
+    "title": "1  Week 1",
+    "section": "1.2 Application",
+    "text": "1.2 Application"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
