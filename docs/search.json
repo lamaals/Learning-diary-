@@ -4,33 +4,54 @@
     "href": "index.html",
     "title": "Learning diary",
     "section": "",
-    "text": "About\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "About"
+  },
+  {
+    "objectID": "Week 1.html",
+    "href": "Week 1.html",
+    "title": "1  Week 1 Remote sensing: an Arial adventure",
+    "section": "",
+    "text": "References\nEvaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia.\nhttps://www.tandfonline.com/doi/full/10.1080/10106049.2021.1980118\nSENTINEL-2 MISSION GUIDE.\nhttps://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2\nLANDSAT 8\nhttps://landsat.gsfc.nasa.gov/satellites/landsat-8/\nSatellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine.\nhttps://www.nature.com/articles/s41598-023-42118-w\nWhat is Remote Sensing?\nhttps://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing"
   },
   {
     "objectID": "Week 1.html#summary",
     "href": "Week 1.html#summary",
-    "title": "1  Week 1",
+    "title": "1  Week 1 Remote sensing: an Arial adventure",
     "section": "1.1 Summary",
-    "text": "1.1 Summary\nIn this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (satellites, drones, planes…) . We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.\n\n1.1.1 Remote sensing definition\nAccording to NASA “Remote sensing is the acquiring of information from a distance.”"
+    "text": "1.1 Summary\nIn this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (spaceborne/airborne). We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.\n\n\n\nFigure (1): Active and Passive sensors. website: (https://www.balamis.com/technology/)\n\n\n\n1.1.1 Remote sensing definition\nAccording to NASA “Remote sensing is the acquiring of information from a distance”. By observing the energy response (reflected, transmitted) and recording information then use it in responding to hazards, apply energy studies utilizing, urban planning, and environmental treaty enforcement…..etc.\n\n\n1.1.2 The process of remote sensing\nElectromagnetic energy, created by moving charged particles, travels in waves through space and the atmosphere. These waves vary in length and frequency; shorter waves have higher frequencies. Electromagnetic waves might get obstructed by a surface or atmosphere which cause scattering for the short wave such as blues and then it reflects back to be recorded and processed to information/data.\n\n\n\nFigure (2): the remote sensing process website: (https://paititi.info/research-technology/remote-sensing-from-space/)\n\n\n\n\n1.1.3 Sentinel-2 VS Landsat\nSentinel-2 The SENTINEL-2 mission consists of two satellites orbiting in the same path around the Earth, but spaced 180° apart. They’re designed to continuously observe changes in land surface conditions. With a wide coverage area and a rapid revisit time of 10 days at the equator.\nLandsat 8 The Landsat 8 satellite carries two main instruments: the Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS). These sensors capture images of the Earth’s surface at various resolutions, including 30 meters for visible, near-infrared, and short-wave infrared data; 100 meters for thermal data; and 15 meters for panchromatic data"
   },
   {
     "objectID": "Week 1.html#application",
     "href": "Week 1.html#application",
-    "title": "1  Week 1",
+    "title": "1  Week 1 Remote sensing: an Arial adventure",
     "section": "1.2 Application",
-    "text": "1.2 Application"
+    "text": "1.2 Application\nLandsat and Sentinel 2 have been used extensively in different fields including land use planning and monitoring, emergency response and management, water use monitoring and others. Each one of those two methods has its strengths and to understand those strengths, we will leverage an analysis that was conducted to evaluate and compare between those two data sources in forest fires mapping article. This analysis compares and assesses spectral indices derived from Sentinel-2 and Landsat-8 OLI imagery and to identify the most appropriate iindex for each sensor for accurately mapping forest fires, using as a case study two fire events that occurred in summer 2017 in northern Tunisia (Achour et al. 2022, Toujani et al. 2022).\n\n\n\nFigure (2): Sentinel 2A Multi Spectral Instrument (MSI) and Landsat-8 Operational Land Imager (OLI) satellite images were acquired before (pre-fire) and after (post-fire) the fires from the U.S. Geological Survey (USGS) website (https://earthexplorer.usgs.gov/).\n\n\n\n1.2.1 Discussion\nResults from this study highlight those spectral indices including NIR-SWIR bands derived from Landsat 8 OLI and Sentinel-2 MSI (ΔNBRn, ΔNBR and RBR) had higher discriminatory power than classical indices based on NIR and red bands (BAI, ΔNDVI, ΔEVI, and ΔMSAVI).\nIn the figure below, we can see that spectral indices derived from Landsat 8, especially those combining the Red-NIR bands such as ΔNDVI, ΔEVI and ΔMSAVI exhibited a higher spectral separability as compared to their counterparts generated from Sentinel bands in both fires.\n\n\n\nFigure (3): M-statistic values to discern burned/unburned areas for both Sentinel 2 (S) and Landsat-8 OLI (L) spectral indices\n\n\nMaps of the estimated burned areas from each spectral index and for each fire reveals that both Landsat 8 and Sentinel-2A can capture the boundaries of fires identified using Copernicus EMS reference maps, albeit with small differences between burned areas, retrieved from each sensor.\nSentinel-based spectral indices (ΔNBRn and RBR) provided the highest level of positional accuracy, with a loc value of about 60 metres. This means that the positions of the extracted fires were shifted approximately by three pixels from their positions in the reference map. However, Landsat-based spectral indices, RBR and ΔNBR, displayed a loc value of about 75 meters, suggesting that the position of the extracted fires were shifted approximately 2.5 pixels from their positions in the reference map. The advantage of Sentinel 2A in terms of positional accuracy could be attributed to its higher spatial resolution as compared to Landsat 8.\n\n\n\nFigure (4): Distribution of burned and unburned values for spectral indices selected for F1 / F2\n\n\n\n\n\nFigure (5): Spectral indices vs. Copernicus EMS fire polygon for the Haddada fire\n\n\n\n\n1.2.2 Conclusion\nThe study concluded that (1) regardless of the sensor, spectral indices that incorporated NIR-SWIR bands exceed those using red and NIR bands in terms of spectral separability; (2) from the viewpoint of accuracy, the Sentinel sensor is slightly more efficient than the Landsat 8 in mapping burned scars, but both sensors produce similar and acceptable results. Hence, this paper concludes that both sensors are a good alternative to EFFIS data, particularly when there is a need to detect details inside the fire. I still have to add so what and why it is useful:"
+  },
+  {
+    "objectID": "Week 1.html#reflection",
+    "href": "Week 1.html#reflection",
+    "title": "1  Week 1 Remote sensing: an Arial adventure",
+    "section": "1.3 Reflection",
+    "text": "1.3 Reflection\nThis lecture wasn’t easy to digest at first, as there was a lot of new ideas and terms (Spectral, Spectrum, Spectral Signature…etc ) to learn. when I went through the lecture it was captivating the facts that we learned for example the scattering of EMR and how the process of gathering satellite images is not as easy and simple as i thought, plus it was really interesting knowing why the sky and sea are blue. This lecture opened my eyes to the uses of satellite data and the importance of it and how it can be used in different areas and in very different methods but what was really interesting for me is the paper that i found on the use of satellite images in capturing the socioeconomic disruption during the Ukrainian war. In this study they combined satellite data on nitrogen dioxide (NO2) and carbon dioxide (CO2) to track changes in human activities, as both gases are linked to fossil fuel combustion. the analysis reveals a significant decrease in NO2 levels over major Ukrainian cities, power plants, and industrial areas during the second quarter of 2022, ranging from 15% to 46% compared to the reference period of 2018-2021. They also used the detection of unusual fire which might be likley from shelling rather than agricultural burning.These findings demonstrate the value of satellite observations in monitoring significant societal changes, particularly during conflicts."
+  },
+  {
+    "objectID": "week 2.html#summary",
+    "href": "week 2.html#summary",
+    "title": "2  week 2 Quarto and Xaringan",
+    "section": "2.1 Summary",
+    "text": "2.1 Summary\n\n\n\n\n\n\n\n\nhttps://lamaals.github.io/remotely-sensing-presentation-/"
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "2  Introduction",
+    "title": "3  Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "3  Summary",
+    "title": "4  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
   },

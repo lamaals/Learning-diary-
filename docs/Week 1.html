@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning diary - 1&nbsp; Week 1</title>
+<title>Learning diary - 1&nbsp; Week 1 Remote sensing: an Arial adventure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./week 2.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week 1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week 1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1 Remote sensing: an Arial adventure</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -108,19 +108,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week 1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1 Remote sensing: an Arial adventure</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week 2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">week 2 Quarto and Xaringan</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -142,8 +148,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1.1</span> Summary</a>
   <ul class="collapse">
   <li><a href="#remote-sensing-definition" id="toc-remote-sensing-definition" class="nav-link" data-scroll-target="#remote-sensing-definition"><span class="header-section-number">1.1.1</span> Remote sensing definition</a></li>
+  <li><a href="#the-process-of-remote-sensing" id="toc-the-process-of-remote-sensing" class="nav-link" data-scroll-target="#the-process-of-remote-sensing"><span class="header-section-number">1.1.2</span> The process of remote sensing</a></li>
+  <li><a href="#sentinel-2-vs-landsat" id="toc-sentinel-2-vs-landsat" class="nav-link" data-scroll-target="#sentinel-2-vs-landsat"><span class="header-section-number">1.1.3</span> Sentinel-2 VS Landsat</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">1.2</span> Application</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">1.2</span> Application</a>
+  <ul class="collapse">
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">1.2.1</span> Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.2.2</span> Conclusion</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">1.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -152,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1 Remote sensing: an Arial adventure</span></h1>
 </div>
 
 
@@ -169,14 +183,88 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.1</span> Summary</h2>
-<p>In this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (satellites, drones, planes…) . We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.</p>
+<p>In this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (spaceborne/airborne). We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.balamis.com/technology/"><img src="active and passive sensors .gif" class="img-fluid figure-img" width="500"></a></p>
+<figcaption class="figure-caption">Figure (1): Active and Passive sensors. website: (https://www.balamis.com/technology/)</figcaption>
+</figure>
+</div>
 <section id="remote-sensing-definition" class="level3" data-number="1.1.1">
 <h3 data-number="1.1.1" class="anchored" data-anchor-id="remote-sensing-definition"><span class="header-section-number">1.1.1</span> Remote sensing definition</h3>
-<p>According to NASA “Remote sensing is the acquiring of information from a distance.”</p>
+<p>According to NASA “Remote sensing is the acquiring of information from a distance”. By observing the energy response (reflected, transmitted) and recording information then use it in responding to hazards, apply energy studies utilizing, urban planning, and environmental treaty enforcement…..etc.</p>
+</section>
+<section id="the-process-of-remote-sensing" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="the-process-of-remote-sensing"><span class="header-section-number">1.1.2</span> The process of remote sensing</h3>
+<p>Electromagnetic energy, created by moving charged particles, travels in waves through space and the atmosphere. These waves vary in length and frequency; shorter waves have higher frequencies. Electromagnetic waves might get obstructed by a surface or atmosphere which cause scattering for the short wave such as blues and then it reflects back to be recorded and processed to information/data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://paititi.info/research-technology/remote-sensing-from-space/"><img src="4-1-Remote-Sensing-Process-1024x455.png" class="img-fluid figure-img" width="500"></a></p>
+<figcaption class="figure-caption">Figure (2): the remote sensing process website: (https://paititi.info/research-technology/remote-sensing-from-space/)</figcaption>
+</figure>
+</div>
+</section>
+<section id="sentinel-2-vs-landsat" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="sentinel-2-vs-landsat"><span class="header-section-number">1.1.3</span> Sentinel-2 VS Landsat</h3>
+<p><strong>Sentinel-2</strong> The SENTINEL-2 mission consists of two satellites orbiting in the same path around the Earth, but spaced 180° apart. They’re designed to continuously observe changes in land surface conditions. With a wide coverage area and a rapid revisit time of 10 days at the equator.</p>
+<p><strong>Landsat 8</strong> The Landsat 8 satellite carries two main instruments: the Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS). These sensors capture images of the Earth’s surface at various resolutions, including 30 meters for visible, near-infrared, and short-wave infrared data; 100 meters for thermal data; and 15 meters for panchromatic data</p>
 </section>
 </section>
 <section id="application" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="application"><span class="header-section-number">1.2</span> Application</h2>
+<p>Landsat and Sentinel 2 have been used extensively in different fields including land use planning and monitoring, emergency response and management, water use monitoring and others. Each one of those two methods has its strengths and to understand those strengths, we will leverage an analysis that was conducted to evaluate and compare between those two data sources in forest fires mapping article. This analysis compares and assesses spectral indices derived from Sentinel-2 and Landsat-8 OLI imagery and to identify the most appropriate iindex for each sensor for accurately mapping forest fires, using as a case study two fire events that occurred in summer 2017 in northern Tunisia (Achour et al.&nbsp;2022, Toujani et al.&nbsp;2022).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://earthexplorer.usgs.gov/"><img src="application 1.jpg" class="img-fluid figure-img" width="500"></a></p>
+<figcaption class="figure-caption">Figure (2): Sentinel 2A Multi Spectral Instrument (MSI) and Landsat-8 Operational Land Imager (OLI) satellite images were acquired before (pre-fire) and after (post-fire) the fires from the U.S. Geological Survey (USGS) website (https://earthexplorer.usgs.gov/).</figcaption>
+</figure>
+</div>
+<section id="discussion" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="discussion"><span class="header-section-number">1.2.1</span> Discussion</h3>
+<p>Results from this study highlight those spectral indices including NIR-SWIR bands derived from Landsat 8 OLI and Sentinel-2 MSI (ΔNBRn, ΔNBR and RBR) had higher discriminatory power than classical indices based on NIR and red bands (BAI, ΔNDVI, ΔEVI, and ΔMSAVI).</p>
+<p>In the figure below, we can see that spectral indices derived from Landsat 8, especially those combining the Red-NIR bands such as ΔNDVI, ΔEVI and ΔMSAVI exhibited a higher spectral separability as compared to their counterparts generated from Sentinel bands in both fires.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="application2.jpg" class="img-fluid figure-img" width="500"></p>
+<figcaption class="figure-caption">Figure (3): M-statistic values to discern burned/unburned areas for both Sentinel 2 (S) and Landsat-8 OLI (L) spectral indices</figcaption>
+</figure>
+</div>
+<p>Maps of the estimated burned areas from each spectral index and for each fire reveals that both Landsat 8 and Sentinel-2A can capture the boundaries of fires identified using Copernicus EMS reference maps, albeit with small differences between burned areas, retrieved from each sensor.</p>
+<p>Sentinel-based spectral indices (ΔNBRn and RBR) provided the highest level of positional accuracy, with a loc value of about 60 metres. This means that the positions of the extracted fires were shifted approximately by three pixels from their positions in the reference map. However, Landsat-based spectral indices, RBR and ΔNBR, displayed a loc value of about 75 meters, suggesting that the position of the extracted fires were shifted approximately 2.5 pixels from their positions in the reference map. The advantage of Sentinel 2A in terms of positional accuracy could be attributed to its higher spatial resolution as compared to Landsat 8.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="application 3.jpg" class="img-fluid figure-img" width="500"></p>
+<figcaption class="figure-caption">Figure (4): Distribution of burned and unburned values for spectral indices selected for F1 / F2</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="application 4.jpg" class="img-fluid figure-img" width="500"></p>
+<figcaption class="figure-caption">Figure (5): Spectral indices vs.&nbsp;Copernicus EMS fire polygon for the Haddada fire</figcaption>
+</figure>
+</div>
+</section>
+<section id="conclusion" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.2.2</span> Conclusion</h3>
+<p>The study concluded that (1) regardless of the sensor, spectral indices that incorporated NIR-SWIR bands exceed those using red and NIR bands in terms of spectral separability; (2) from the viewpoint of accuracy, the Sentinel sensor is slightly more efficient than the Landsat 8 in mapping burned scars, but both sensors produce similar and acceptable results. Hence, this paper concludes that both sensors are a good alternative to EFFIS data, particularly when there is a need to detect details inside the fire. <strong>I still have to add so what and why it is useful:</strong></p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> Reflection</h2>
+<p>This lecture wasn’t easy to digest <strong><em>at first,</em></strong> as there was a lot of new ideas and terms (Spectral, Spectrum, Spectral Signature…etc ) to learn. when I went through the lecture it was captivating the facts that we learned for example the scattering of EMR and how the process of gathering satellite images is not as easy and simple as i thought, plus it was really interesting knowing why the sky and sea are blue. This lecture opened my eyes to the uses of satellite data and the importance of it and how it can be used in different areas and in very different methods but what was really interesting for me is the paper that i found on the use of satellite images in capturing the socioeconomic disruption during the Ukrainian war. In this study they combined satellite data on nitrogen dioxide (NO2) and carbon dioxide (CO2) to track changes in human activities, as both gases are linked to fossil fuel combustion. the analysis reveals a significant decrease in NO2 levels over major Ukrainian cities, power plants, and industrial areas during the second quarter of 2022, ranging from 15% to 46% compared to the reference period of 2018-2021. They also used the detection of unusual fire which might be likley from shelling rather than agricultural burning.These findings demonstrate the value of satellite observations in monitoring significant societal changes, particularly during conflicts.</p>
+</section>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<p>Evaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia.</p>
+<p><a href="https://www.tandfonline.com/doi/full/10.1080/10106049.2021.1980118" class="uri">https://www.tandfonline.com/doi/full/10.1080/10106049.2021.1980118</a></p>
+<p>SENTINEL-2 MISSION GUIDE.</p>
+<p><a href="https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2" class="uri">https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2</a></p>
+<p>LANDSAT 8</p>
+<p><a href="https://landsat.gsfc.nasa.gov/satellites/landsat-8/" class="uri">https://landsat.gsfc.nasa.gov/satellites/landsat-8/</a></p>
+<p>Satellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine.</p>
+<p><a href="https://www.nature.com/articles/s41598-023-42118-w" class="uri">https://www.nature.com/articles/s41598-023-42118-w</a></p>
+<p>What is Remote Sensing?</p>
+<p><a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing" class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing</a></p>
 
 
 </section>
@@ -422,8 +510,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week 2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">week 2 Quarto and Xaringan</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
