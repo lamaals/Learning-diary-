@@ -1,0 +1,17 @@
+---
+title: "Week 4 policy: "
+---
+
+## Summary.
+
+In week 4, the primary emphasis was on utilizing remote sensing to accomplish policy objectives. We were tasked with selecting a city and identifying policy challenges that could be addressed using remotely sensed data.
+
+I am deeply intrigued by the observation and analysis of cities affected by conflict. I am convinced that leveraging satellite imagery to assess the economic, environmental, and social repercussions of war plays a vital role in formulating decisions that benefit the city's well-being. This may help urban planners in implementing effective solutions for post-war urban development.
+
+As one of the goals of the **United Nations Urban agenda**
+
+-   Adopt and implement disaster risk reduction and management, reduce vulnerability, build resilience and responsiveness to natural and human-made hazards and foster mitigation of and adaptation to climate change.
+
+-   . We recognize that urban form, infrastructure and building design are among the greatest drivers of cost and resource efficiencies, through the benefits of economy of scale and agglomeration and by fostering energy efficiency, renewable energy, resilience, productivity, environmental protection and sustainable growth in the urban economy.
+
+-   We commit ourselves to giving particular consideration to urban deltas, coastal areas and other environmentally sensitive areas, highlighting their importance as ecosystems' providers of significant resources for transport, food security, economic prosperity, ecosystem services and resilience. We commit ourselves to integrating appropriate measures into sustainable urban and territorial planning and development.

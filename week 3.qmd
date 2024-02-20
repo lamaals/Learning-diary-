@@ -1,0 +1,17 @@
+---
+title: "Week 3 Correction "
+---
+
+## Summary.
+
+In this lecture, we had a look about the difference between Push broom and Whisk broom Sensors, then we discovered that satellite images usually might has flaws. Geometric Correction, Atmospheric Correction, Topographic Correction, and Radiometric are all methods to correct the remote sensing products. The next part of the lecture was about the joining data techniques and how to make enhancement on the images.
+
+### Atmospheric Correction.
+
+**Atmospheric correction** is the process of eliminating scattering and absorption effects caused by the atmosphere, thereby revealing the surface reflectance that represents surface properties.
+
+[**Methods to remove the atmosphere effect:**]{.underline}
+
+**Relative:** involves normalising images, which simplifies comparison with other images instead of directly eliminating atmospheric effects. One common technique for relative correction is Dark Object Subtraction (DOS), where dark objects with very low reflectance are subtracted from the image. This process not only standardizes the image but also mitigates atmospheric effects.
+
+**Absolute:**

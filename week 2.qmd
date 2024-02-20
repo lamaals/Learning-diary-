@@ -1,8 +1,10 @@
 ---
-title: "week 2 Quarto and Xaringan"
+title: "week 2 Quarto and Xaringan: Crafting Stunning Presentations"
 ---
 
 ## Summary
+
+The content of week 2 was about making presentation and learning diaries. Belwo is presentation that was made using Xaringan about GOSAT-2 satellite.
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
@@ -10,4 +12,5 @@ xaringanExtra::embed_xaringan(
   ratio = "16:9")
 
 ```
+
 https://lamaals.github.io/remotely-sensing-presentation-/

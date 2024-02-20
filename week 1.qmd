@@ -4,7 +4,7 @@ title: "Week 1 Remote sensing: an Arial adventure"
 
 ## Summary
 
-In this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (spaceborne/airborne). We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.
+In this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (space-borne/airborne). We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.
 
 [![Figure (1): Active and Passive sensors. website: (https://www.balamis.com/technology/)](active%20and%20passive%20sensors%20.gif){fig-align="center" width="500"}](https://www.balamis.com/technology/)
 
