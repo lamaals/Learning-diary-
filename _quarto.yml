@@ -3,15 +3,24 @@ project:
   output-dir: docs
 
 book:
-  title: "Learning diary"
+  title: "CASA0023 Learning Diary"
   author: "Lama Alswliman"
   date: "30/01/2024"
   chapters:
     - index.qmd
+    
     - Week 1.qmd
+    
     - week 2.qmd
+    
     - week 3.qmd
+    
     - week 4.qmd
+    
+    - week 6.qmd
+    
+    - week 7.qmd
+    
     - references.qmd
 
 bibliography: references.bib

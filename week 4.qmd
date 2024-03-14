@@ -1,17 +1,105 @@
 ---
-title: "Week 4 policy: "
+title: "Week 4 policy: Transformative Shifts "
 ---
 
-## Summary.
+## Summary
 
 In week 4, the primary emphasis was on utilizing remote sensing to accomplish policy objectives. We were tasked with selecting a city and identifying policy challenges that could be addressed using remotely sensed data.
 
-I am deeply intrigued by the observation and analysis of cities affected by conflict. I am convinced that leveraging satellite imagery to assess the economic, environmental, and social repercussions of war plays a vital role in formulating decisions that benefit the city's well-being. This may help urban planners in implementing effective solutions for post-war urban development.
+I am deeply intrigued by the observation and analysis of cities affected by conflict. I am convinced that leveraging satellite imagery to assess the economic, environmental, and social repercussions of war plays a vital role in formulating decisions that benefit the city's well-being. This may help urban planners in implementing effective solutions for post-war urban development. Hence, I have chosen to study the impact of war on the socio-economic, environmental, and building damage aspects of Ukraine.
 
-As one of the goals of the **United Nations Urban agenda**
+According to **United Nations Urban agenda:**
 
--   Adopt and implement disaster risk reduction and management, reduce vulnerability, build resilience and responsiveness to natural and human-made hazards and foster mitigation of and adaptation to climate change.
+-   We recognize that urban form, infrastructure and building design are among the greatest drivers of cost and resource efficiencies, through the benefits of economy of scale and agglomeration and by fostering energy efficiency, renewable energy, **resilience**, productivity, **environmental protection** and sustainable growth in the **urban economy**.
 
--   . We recognize that urban form, infrastructure and building design are among the greatest drivers of cost and resource efficiencies, through the benefits of economy of scale and agglomeration and by fostering energy efficiency, renewable energy, resilience, productivity, environmental protection and sustainable growth in the urban economy.
+-   sustainable management of natural resources in cities and human settlements in a manner that protects and improves the urban **ecosystem** and **environmental services**, **reduces greenhouse gas emissions and air pollution** and promotes disaster risk reduction and management,
 
--   We commit ourselves to giving particular consideration to urban deltas, coastal areas and other environmentally sensitive areas, highlighting their importance as ecosystems' providers of significant resources for transport, food security, economic prosperity, ecosystem services and resilience. We commit ourselves to integrating appropriate measures into sustainable urban and territorial planning and development.
+Also highlighted in the **Sustainable Development Goals** agenda:
+
+**Goal 11:** Make cities and human settlements inclusive, safe, **resilient** and sustainable.In fact, sustainable development in cities is critical to achieving most of Agenda 2030.
+
+## Application
+
+Wars tend to have a series of effects and outcomes, the war on Ukraine has a massive impact on the economics of the country, just in the first year of the conflict Ukraine saw a devastating 30-35% decline in GDP, While there is a projected 0.5% GDP growth for 2023, it remains significantly below pre-war levels. The Ukraine economic deterioration is one of many side effects of war such as people displacement, infrastructure damage, pollution, and agriculture damage.... etc.
+
+The focus of the Sustainable Development Goals (SDGs) and the new agenda is to prioritize the development of cities that exhibit resilience, environmental sustainability, and economic growth in urban areas. Therefore, it was appropriate to highlight Ukraine, a country in conflict, as a case study. This emphasis is necessary to navigate the crisis and ensure the well-being of its residents by fostering a post-war process that creates a more resilient city. This approach in Ukraine involves maintaining economic resilience, addressing environmental risks, and providing affordable housing for displaced people.
+
+The use of remotely sensed data would be appropriate in this sensitive condition, as it can provide accurate information about the situation. This was shown by some of the studies conducted on Ukraine to monitor the socioeconomic change, air pollution, infrastructure damage, agriculture change assessment, and aid refugee relief operations. For this week, I will focus on a single paper while also recommending other remote sensing methods that could aid in studying the impact of wars. This paper details the method used for damage assessment : ***War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images*** (Aimaiti, Koch 2022). In week 4 I'm only considering one paper but i will suggest other remote sensing methods that would help in studying the impact of wars.
+
+[**War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images:**]{.underline}
+
+In this study, medium-resolution satellite imagery was utilized because it is publicly available and capable of rapidly producing damage maps, which can serve as an initial reference for assessing damage.
+
+Sentinel-1 and Sentinel-2 data were used assess building damage, a robust SAR log ratio of intensity method is utilized for Sentinel-1 data, and a texture analysis is conducted for Sentinel-2 data for damage assessment. To focus on urban areas and suppress changes from other features and landcover types, a built-up area mask is generated using OpenStreetMap building footprints and the World Settlement Footprint (WSF) dataset, respectively.
+
+#### Methods
+
+The workflow consists of four phases: data selection and pre-processing, change detection analysis using the log ratio of intensity and Gray Level Co-occurrence Matrix (GLCM) methods, determination of an optimal threshold for separating changed and unchanged areas, and validation of results using high-resolution WorldView images and the UNOSAT damage assessment map.
+
+![**Figure (1):** the processing workflow for building damage mapping using Sentinel-1 and Sentinel-2 images. Note: dif, AOI, and Tr refer to the difference, selected area for threshold determination, and threshold.](policy%201.jpg){fig-align="center" width="3000"}
+
+[**SAR Intensity Analysis:**]{.underline}
+
+A collapsed building exhibits a distinct backscatter structure compared to an intact one. Typically, strong backscattering diminishes or disappears after a building collapses due to a disaster. However, in partially damaged buildings, where sections of the wall and roof collapse, remaining walls, debris, and ground may form a corner reflector, resulting in strong double-bounce effects and increased backscattering intensity. This difference enables the identification of damaged and undamaged buildings using SAR backscattering intensity change detection. For this purpose, the study implemented the simple yet robust SAR log ratio of intensity method.
+
+![**Figure** **(2):** schematic diagram of backscatter intensity from (a) intact buildings (b) destroyed buildings, and (c) partially damaged buildings in synthetic aperture radar (SAR) images; (a-1,a-2,b-1,b-2,c-1,c-2) are pre-and post-event Sentinel-1 images (19 February 2022 & 8 April 2022); (a-3,b-3,c-3) are corresponding WorldView images (25 & 31 March 2022).](policy%202.jpg){fig-align="center"}
+
+[**Optical Texture Analysis:**]{.underline}
+
+In this study, the GLCM Mean was utilized to differentiate between damaged and undamaged buildings, This feature is particularly valuable for classifying landscapes, especially in building damage assessment. GLCM Mean represents interior texture, characterized by high values in areas with subtle and irregular variations and few coherent edges. Statistics were calculated with a 3 × 3 window size using ENVI software. Initially, the average of pre-event images was computed to create a single pre-event texture image. Subsequently, the texture difference between this image and the post-event texture was calculated. The optimal threshold value for texture difference analysis was determined to be 0.4, with pixels below this threshold classified as damaged.
+
+![**Figure (3):** the GLCM texture difference and the corresponding optical images. (a--d) are selected examples that have significant texture changes, and those locations are shown on the WorldView-2 image](policy%203.jpg){fig-align="center"}
+
+#### Results
+
+The Sentinel-1 intensity analysis revealed flooding along the Irpin River. This area was excluded from the assessment as the flooding might be an indirect impact of war, but the focus is specifically on war-related damages to buildings and infrastructure. Significant building damage was concentrated in the northwestern part of Kyiv Oblast, particularly in Irpin, Bucha, and Hostomel. Building statistics, ranging from 85 m2 to 74,156 m2, were calculated using augmented OSM polygons and ArcGIS Desktop software. Most buildings identified by SAR intensity analysis were medium to large-scale structures. Smaller residential buildings were poorly detected, likely due to sensor limitations. High-rise buildings were flagged as damaged, but visual assessments using WorldView imagery did not confirm this finding. The WSF mask showed more false positives than the OSM mask.
+
+![**Figure (4)**: comparison of Sentinel-1 damaged building results using two different masks (OSM&WSF). (a) shows the SAR intensity-based results for the entire area. The locations (b--e) were selected as representative areas for comparison with the high-resolution WorldView image. The columns from left to right indicate the WorldView image (31 March 2022), OSM and WSF mask results of the damaged buildings. The scale shown in (b) is the same for (c--e).](policy%204.jpg){fig-align="center"}
+
+The damage assessment results from the Sentinel-2 texture analysis revealed a flooded area along the Irpin River, similar to the SAR intensity analysis but with a smaller extent. Four representative areas were selected for comparison using the OSM mask versus the WSF built-up layer mask. The effects of these masks were less significant compared to the SAR intensity analysis, indicating fewer false positives in unmasked damage labels. Comparison with high-resolution WorldView images showed that the texture analysis mainly detected damages on large buildings with clear boundaries. However, buildings with dark roofs and smaller damaged buildings lacking distinct texture features compared to their surroundings were not captured in the analysis. Additionally, changes in intensity values of bright objects, representing either bare ground or tall structures showing different reflectance at different times, were misclassified as damaged buildings.
+
+![Figure (5): the result of Sentinel-2 texture-based analysis for study region (a). (b--e) are comparison of Sentinel-2 damaged building results using two different masks (OSM&WSF). The locations (b--e) are referenced in (a) and were selected as representative areas for comparison with the high-resolution WorldView image. The columns from left to right indicate the WorldView image (25 March 2022 & 31 March 2022), OSM and WSF mask results of the damaged buildings. The scale shown in (b) is the same for (c--e).](policy%205.jpg){fig-align="center"}
+
+#### Conclusion
+
+This study utilized Sentinel-1 and Sentinel-2 data to assess damage in Kyiv during the 2022 war. The analysis revealed concentrated damage in the northwestern Kyiv Oblast, particularly in cities like Bucha, Irpin, and Hostomel. When comparing damage detection algorithms, the analysis achieved 58% accuracy compared to UNOSAT verified damage, with 76% accuracy for larger buildings. The use of OpenStreetMap (OSM) and World Settlement Footprint (WSF) masks reduced false positives, but incomplete OSM footprints excluded some damage. Although texture analysis effectively detected large damaged buildings, it was less accurate for identifying small ones. Consequently, the study found that the intensity analysis performed better due to its ability to identify a wider range of building sizes accurately.
+
+#### [**Other methods that can be implemented in conflict zones using remote sensed data:**]{.underline}
+
+[**Evaluation of Socio-Economic Consequences of war:**]{.underline}
+
+This can be done through the use of couple of methods like:
+
+-   using satellite observations of nitrogen dioxide (NO2) and carbon dioxide (CO2) to monitor changes in human activities, such as fossil fuel combustion, power generation, and industrial production, during the conflict.
+
+-   Distinct fire and thermal anomaly patterns due to military activities, contrasting with past agricultural-related fires. These patterns, can be confirmed by Sentinel 2 imagery, carry significant socio-economic implications, straining recovery efforts and requiring resource allocation based on various factors.
+
+-   Satellite data from the VIIRS thermal imager utilization to monitor socio-economic developments, using Total Light Intensity (TLI) serving as an indicator of night illumination, reflecting economic activity, population density, and electricity consumption.
+
+[**Monitor environment and air quality:**]{.underline}
+
+-   Employing NO2 and CO satellite data, filtering the data fields using a quality assurance index and binned into regular grids for reliability and comparison.
+
+-   Detection of environmental changes: remote sensing enables the identification of alterations in natural settings, including deforestation, water pollution, shifts in vegetation cover, among others, potentially stemming from military activities.
+
+These are several ways in which remotely sensed data can contribute to urban expansion and guide post-war urban planning initiatives to construct a more resilient city.
+
+## Reflection
+
+Conducting research on policies has deepened my understanding of how remote sensing data can drive transformation and development in urban areas, environmental monitoring, and socio-economic analysis, ultimately fostering economic growth. This comprehensive approach underscores the versatility of remote sensing and the various methods tailored to specific case studies. Despite its potential, remote sensing also poses limitations, such as restricted access to high-resolution data and potential inaccuracies in results. Nonetheless, I firmly believe that leveraging remote sensing methodologies and analyses can inform decision-making processes crucial for national and international development.
+
+## Reference
+
+***War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images*** (Aimaiti, Koch 2022).
+
+***Satellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine*** (Ialongo, Hakkaraine 2022).
+
+***Use of Satellite Information for Evaluation of Socio-Economic Consequences of the War in Ukraine*** (Yelistratova, L. O., Apostolov, O. A. 2022).
+
+***Monitoring and assessment of the scale of destruction by remote sensing methods during the war in Ukraine*** (Ye. Butenko, S. Petrychenko 2023).
+
+***Remotely visible impacts on air quality after a year-round full-scale Russian invasion of Ukraine*** (Savenets, Osadchyi 2023).
+
+***United Nations New Urban Agenda***
+
+***Universal Sustainable Development Goals***

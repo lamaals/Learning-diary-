@@ -1,0 +1,61 @@
+---
+title: "Week 6 GEE: Mapping the world"
+---
+
+## Summary
+
+This week, we familiarized ourselves with Google Earth Engine (GEE) and its features, highlighting the advantages of using GEE and the various processes it facilitates. It became apparent early on in the lecture that using GEE would be more straightforward compared to QGIS and SNAP. This was not only a welcome relief but also an exciting prospect, given GEE's reputation as a leading platform for analyzing remote sensing data.
+
+#### [**What is GEE?**]{.underline}
+
+Due to the massive amount of data acquired from satellites, it became challenging to manage and analyze this data. Google Earth Engine (GEE) has emerged as a solution for processing and analyzing big data in this context. Essentially, GEE is a cloud-based platform capable of processing large geospatial datasets across extensive areas and monitoring environmental changes over extended periods.
+
+## Application
+
+Google Earth Engine is utilized in various applications and is widely employed globally for diverse studies and analyses. With that said, it is essential to briefly examine the significance of GEE, its functions, applications, advantages, and limitations in remote sensing analysis. This discussion will be based on two papers which are: [***Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review***]{.underline} and [***Google Earth Engine for geo-big data applications: A meta-analysis and systematic review.***]{.underline}
+
+#### **Why Google earth engine.**
+
+GEE platform allows users to tap into a vast collection of satellite images and geospatial data, spanning over a petabyte in size, all hosted on Google's powerful computing infrastructure. This setup makes it ideal for conducting in-depth analysis on satellite imagery and remote sensing data. By integrating a comprehensive library of historical and up-to-date satellite imagery with robust APIs, Google Earth Engine empowers users to execute complex geospatial analyses directly in the cloud. This eliminates the need for users to download massive datasets to their local machines, facilitating the efficient processing of large-scale geospatial data. With its seamless access to such a wealth of geospatial information and the ability to perform sophisticated analyses in a cloud-based environment, Google Earth Engine stands out as an invaluable tool for researchers, scientists, and analysts working with satellite imagery and remote sensing data.
+
+#### GEE functions
+
+Google Earth Engine offers a wide range of functions for performing spectral and spatial operations on single or multiple images. While it supports various pixel-based spectral operations that can be efficiently implemented in parallel on cloud architecture, it has limited support for spatial functions such as filters, edge detection methods, line detection via Hough Transform, and morphological operators due to parallel implementation challenges. However, it provides access to supervised and unsupervised machine learning algorithms including CART, SVM, RF classifiers, and clustering algorithms like K-means, Cascade K-means, X-means, Cobweb, and SNIC for tasks like image classification and segmentation.With access to over 40 years of datasets, GEE enables temporal and change analyses using functions like CCDC, EWMACD, and LandTrendr. These functions facilitate tasks such as continuous change detection, trend analysis, and vegetation analysis. Specialized algorithms like VCT and VERDET are available for analyzing forest disturbances and vegetation changes over time.
+
+![**Figure (1):** Different supporting functions within GEE.](week6-1.png){fig-align="center"}
+
+#### GEE Aplication
+
+This platform presents a variety of applications, some of which will be depicted in the figure below along with the frequency of studies related to them. I will provide demonstrations for some of these applications.
+
+-   **Vegetation**
+
+GEE's computational efficiency supports large-scale and long-term vegetation monitoring, exemplified by studies mapping vegetation dynamics in Queensland, Australia, and detecting degradation in Rondônia, Brazil, with reported accuracies of 82.6% and 68.1%-85.3% respectively.
+
+-   **Urban**
+
+GEE facilitates long-term monitoring of urban dynamics, including expansion mapping, climate zone monitoring, 4-D modeling, green space classification, and heat island identification, with studies showcasing its efficiency and accuracy in assessing urban growth and Surface Urban Heat Island (SUHI) effects.
+
+-   **Land Cover**
+
+GEE provides extensive remote sensing datasets for land cover mapping, dynamics monitoring, coastal mapping, and wetland classification, with studies showcasing its effectiveness in regions like northern China and Mato Grosso, Brazil, achieving over 80% accuracy using various algorithms and satellite imagery integration.
+
+-   **Natural disasters**
+
+GEE facilitates real-time and long-term analysis of remotely sensed data, enabling monitoring, forecasting, and resilience studies of natural disasters that cause destruction to both environment and human life such as droughts, floods, wildfires, landslides, hurricanes, and tsunamis, with studies showcasing its effectiveness in regions like Punjab, Pakistan, and Bangladesh.
+
+![**Figure (2):** applications of GEE](week%206-2.png){fig-align="center"}
+
+#### Advantages and limitations
+
+![**Figure (3):** Advantages and limitation of GEE source: (Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review)](week6%20advantages.png){fig-align="center"}
+
+## Reflection
+
+It's evident that Google Earth Engine (GEE) serves as a powerful tool for processing and analyzing large geospatial datasets, particularly in the realm of remote sensing. The platform's cloud-based infrastructure and access to extensive satellite imagery and geospatial data make it invaluable for conducting comprehensive studies and analyses across various domains.Google Earth Engine plays a crucial role in advancing research and analysis in the field of remote sensing, offering powerful capabilities and a wide range of applications. Despite its limitations and it's not widely used, GEE remains a valuable platform for researchers and analysts seeking to leverage geospatial data for various studies and analyses.
+
+## Reference
+
+**Google Earth Engine for geo-big data applications: A meta-analysis and systematic review.** (Tamiminia H,Salehi B 2020)
+
+**Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.**
