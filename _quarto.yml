@@ -21,6 +21,8 @@ book:
     
     - week 7.qmd
     
+    - week 8.qmd
+    
     - references.qmd
 
 bibliography: references.bib
