@@ -14,8 +14,7 @@ In today's lecture, we explored Synthetic Aperture Radar (SAR) technology and co
 
 **SAR Polarization and Scattering Mechanisms**
 
-Polarization refers to the orientation of the
-plane in which the transmitted electromagnetic wave swings. SAR sensors usually transmit linearly polarized whereby the advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signal strength of different polarizations carries information about the imaged surface structure, based on different types of scattering which are rough surface, volume, and double bounce scattering.
+Polarization refers to the orientation of the plane in which the transmitted electromagnetic wave swings. SAR sensors usually transmit linearly polarized whereby the advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signal strength of different polarizations carries information about the imaged surface structure, based on different types of scattering which are rough surface, volume, and double bounce scattering.
 
 -   Rough surface scattering, such as that caused by bare soil or water, is most sensitive to VV scattering.
 
@@ -23,11 +22,9 @@ plane in which the transmitted electromagnetic wave swings. SAR sensors usually 
 
 -   The last type of scattering, double bounce, is caused by buildings, tree trunks, or inundated vegetation and is most sensitive to an HH polarized signal.
 
-Lastly, as wavelength
-changes signal penetration depth, it drives the amount of signal attributed to
-different scattering types.
+Lastly, as wavelength changes signal penetration depth, it drives the amount of signal attributed to different scattering types.
 
-![**Figure (2):** SAR Polarization and Scattering Source: NASA Earth Data](week9 2.jpg){fig-align="center"}
+![**Figure (2):** SAR Polarization and Scattering Source: NASA Earth Data](week9%202.jpg){fig-align="center"}
 
 **Change Detection in SAR**
 
@@ -49,7 +46,7 @@ For the methodology they proposed a novel approach for change detection in SAR i
 
 -   **Fuzzy Clustering**: An improved FCM algorithm is utilized for clustering to discriminate changed and unchanged areas in the fused image. Traditional FCM algorithms often lack robustness to noise, prompting the development of variants like FCM_S and FGFCM, which incorporate local spatial information. However, these approaches require parameter tuning and may still be sensitive to noise. To address this, a robust Fuzzy Local Information C-Means (FLICM) algorithm is proposed, which employs a fuzzy factor to balance noise robustness and image detail preservation. Further improvement is made by replacing spatial distance with the local coefficient of variation to better handle noise and preserve image details, resulting in the reformulated **RFLICM** algorithm.
 
-![**Figure (3):** Flowchart of the proposed change detection approach.](week9 3.png){fig-align="center" width="300"}
+![**Figure (3):** Flowchart of the proposed change detection approach.](week9%203.png){fig-align="center" width="300"}
 
 #### Experiments
 
@@ -59,11 +56,11 @@ To assess the effectiveness of the proposed analyzing method they ran experiment
 
 The efficacy of wavelet image fusion in generating difference images was assessed against mean-ratio and log-ratio methods. The fused difference image effectively captured step changes, suppressing unchanged regions using wavelet coefficients from the log-ratio image. Comparing performance, the log-ratio operator achieved a PCC of 99.27% for Otsu and 99.24% for K-means, while the proposed approach attained the highest PCC (99.35% for Otsu and 99.36% for K-means) and kappa (0.781 for Otsu and 0.784 for K-means). Visual analysis revealed more spots in change detection from the mean-ratio image due to speckle effects, while the log-ratio image had fewer spots but suffered from information loss in changed areas. The wavelet fusion image notably reduced errors in change detection results. In the second experiment, the impact of the RFLICM algorithm on SAR-image change detection, based on wavelet fusion difference images, was assessed. Traditional FCM produced many spots due to its lack of consideration for spatial context. However, FLICM and RFLICM, incorporating local information, yielded robust change detection maps, with RFLICM outperforming FLICM and FCM with a PCC of 99.68%, 99.66%, and 99.37% respectively.
 
-![**Figure (4):** Change detection results of the Bern data set based on the three difference images obtained by Otsu. (a) Based on the mean-ratio operator. (b) Based on the log-ratio operator. (c) Based on wavelet fusion.](week9 4.png){fig-align="center" width="400"}
+![**Figure (4):** Change detection results of the Bern data set based on the three difference images obtained by Otsu. (a) Based on the mean-ratio operator. (b) Based on the log-ratio operator. (c) Based on wavelet fusion.](week9%204.png){fig-align="center" width="400"}
 
-![**Figure (5):** Change detection results of the Bern data set based on the three difference images obtained by K-means. (a) Based on the mean-ratio operator. (b) Based on the log-ratio operator. (c) Based on wavelet fusion.](week9 5.png){fig-align="center" width="400"}
+![**Figure (5):** Change detection results of the Bern data set based on the three difference images obtained by K-means. (a) Based on the mean-ratio operator. (b) Based on the log-ratio operator. (c) Based on wavelet fusion.](week9%205.png){fig-align="center" width="400"}
 
-![**Figure (6):** Change detection results of the Bern data set achieved by (a) FCM, (b) FLICM, and (c) proposed RFLICM.](week9 6.png){fig-align="center" width="400"}
+![**Figure (6):** Change detection results of the Bern data set achieved by (a) FCM, (b) FLICM, and (c) proposed RFLICM.](week9%206.png){fig-align="center" width="400"}
 
 #### Conclusion
 
@@ -71,12 +68,26 @@ The method used in change detection in (SAR) images, which combines wavelet imag
 
 ## Reflection
 
-It was really interesting to cover and go deep in the change detection of SAR images methods. For me I feel like because I'm interested In the usig sattelite images and remote sensing to lectures slide it was mentioned that in Image fusion we havent covered some of the methods that are used in the application section so i got curios about it and to figure out and did some research to understand it is principles.
+It was really interesting to cover and go deep in the change detection of SAR images methods. For me I feel like because I'm interested in using sattelite images and remote sensing to map the impact of conflict and to detect changes in those areas. In the lectures we talked about images enhancements methods and image fusion was one of them. I got intrigued in finding out more about image fusion methods especially the ones that we haven't covered. For this reason, I searched for discrete wavelet transform, which was surprisingly an eye opening because I learned so much about the SAR images change detection and what are the hardships in its applications. I think this change detaction method is crucial for humanitarian organization work in detecting in a precise manner where to focus their efforts and the most damaged areas and buildings. This will eventually lead to deliver the most efficent excution plan for any humanitarian intervention. Some of the stuff that are covered in this lecture was mentioned before but briefly like polarization and scattering although they are simple but they have a great importance.
 
 ## Reference
 
-**Change Detection on SAR Images**
+**Change Detection in Synthetic Aperture Radar Images based on Image Fusion and Fuzzy Clustering** (Gong.M, Zhou.Z 2012)
 
-**Deep Learning-Based Suppression of Speckle-Noise in Synthetic Aperture Radar (SAR) Images: A Comprehensive Review**
+**Change Detection on SAR Images** (R.A. Alagu Raja,K. Vaiyammal 2017).
+
+**Deep Learning-Based Suppression of Speckle-Noise in Synthetic Aperture Radar (SAR) Images: A Comprehensive Review** (Kant Shukla.S, K. Dwivedi.S 2023).
+
+**Overview of SAR Image Change Detection** (Xuan.J, Xin.Z 2021)
+
+**Deep Despeckling of SAR Images to Improve Change Detection Performance** (Ihmeida.M, Shahzad.M 2023).
+
+**Change Detection from Synthetic Aperture Radar Images via Graph-Based Knowledge Supplement Network** (Wang.J, Gao.F 2022)
+
+**Unsupervised SAR Image Change Detection Based on Structural Consistency and CFAR Threshold Estimation** (Zhu.J, Wang.F 2023)
+
+<https://asf.alaska.edu/information/sar-information/what-is-sar/>
+
+<https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar>
 
 <https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar>
