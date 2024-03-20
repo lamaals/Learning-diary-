@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Learning Diary - 3&nbsp; Week 3 Correction: Refining the Lens</title>
+<title>CASA0023 Learning Diary - 8&nbsp; week 9 SAR:</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week 4.html" rel="next">
-<link href="./week 2.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./week 8.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week 3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 Correction: Refining the Lens</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week 9.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week 9 SAR:</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week 3.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week 3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 Correction: Refining the Lens</span></span></a>
   </div>
 </li>
@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week 9.html" class="sidebar-item-text sidebar-link">
+  <a href="./week 9.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week 9 SAR:</span></span></a>
   </div>
 </li>
@@ -169,14 +169,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
-  <ul class="collapse">
-  <li><a href="#geometric-correction." id="toc-geometric-correction." class="nav-link" data-scroll-target="#geometric-correction."><span class="header-section-number">3.1.1</span> Geometric Correction.</a></li>
-  <li><a href="#atmospheric-correction." id="toc-atmospheric-correction." class="nav-link" data-scroll-target="#atmospheric-correction."><span class="header-section-number">3.1.2</span> Atmospheric Correction.</a></li>
-  </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.2</span> Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">3.4</span> Reference</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">8.1</span> Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">8.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.3</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">8.4</span> Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -185,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 Correction: Refining the Lens</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week 9 SAR:</span></h1>
 </div>
 
 
@@ -200,86 +196,91 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
-<p>In this lecture, we had a look about the difference between Push broom and Whisk broom Sensors, then we discovered that satellite images usually might has flaws. Geometric Correction, Atmospheric Correction, Topographic Correction, and Radiometric are all methods to correct the remote sensing products. The next part of the lecture was about the joining data techniques and how to make enhancement on the images.</p>
-<section id="geometric-correction." class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="geometric-correction."><span class="header-section-number">3.1.1</span> Geometric Correction.</h3>
-<p>The process involves taking the coordinates of the dataset, applying a mathematical model to determine the transformation coefficients, and then using these coefficients to perform the geometric transformation, effectively altering the spatial arrangement of the features in the dataset. In other words it is the <strong>“</strong> attempt to correct for positional errors and to transform the original image into a new image that has the geometric characteristics of a map. can you rephrase<strong>” I should add the citation</strong> (<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/geometric-correction#:~:text=Geometric%20corrections%20attempt%20to%20correct,geometric%20characteristics%20of%20a%20map." class="uri">https://www.sciencedirect.com/topics/earth-and-planetary-sciences/geometric-correction#:~:text=Geometric%20corrections%20attempt%20to%20correct,geometric%20characteristics%20of%20a%20map.</a>)</p>
+<section id="summary" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
+<p>In today’s lecture, we explored Synthetic Aperture Radar (SAR) technology and compared it with the optical imagery we’ve been using throughout this module. We delved into the details of SAR, including its polarization and wavelength, and discussed how SAR functions. Specifically, we focused on change detection in SAR images. While we discussed one method in depth during the lecture, the slides presented various other methods for change detection.</p>
+<p><strong>Synthetic Aperture Radar (SAR)</strong></p>
+<p>(SAR) is a radar technology utilized for generating two-dimensional images or three-dimensional reconstructions of various objects, including landscapes. SAR achieves finer spatial resolution by employing the motion of the radar antenna over a target area, which contrasts with the stationary beam-scanning radars traditionally used. Functioning as an active sensor, SAR transmits microwave signals and captures the signals reflected, or backscattered, from the Earth’s surface. This capability enables SAR to produce high-resolution images using relatively compact antennas. Notably, SAR possesses unique attributes such as cloud-penetrating capabilities.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="geometric coorection.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (1):</strong> Geometric Correction process</figcaption>
+<p><img src="week9.gif" class="img-fluid figure-img" width="400"></p>
+<figcaption class="figure-caption"><strong>Figure (1):</strong> Synthetic Aperture Radar (SAR)</figcaption>
+</figure>
+</div>
+<p><strong>SAR Polarization and Scattering Mechanisms</strong></p>
+<p>Polarization refers to the orientation of the plane in which the transmitted electromagnetic wave swings. SAR sensors usually transmit linearly polarized whereby the advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signal strength of different polarizations carries information about the imaged surface structure, based on different types of scattering which are rough surface, volume, and double bounce scattering.</p>
+<ul>
+<li><p>Rough surface scattering, such as that caused by bare soil or water, is most sensitive to VV scattering.</p></li>
+<li><p>Volume scattering, for example, caused by the leaves and branches in a forest canopy, is most sensitive to cross-polarized data like VH or HV.</p></li>
+<li><p>The last type of scattering, double bounce, is caused by buildings, tree trunks, or inundated vegetation and is most sensitive to an HH polarized signal.</p></li>
+</ul>
+<p>Lastly, as wavelength changes signal penetration depth, it drives the amount of signal attributed to different scattering types.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week9 2.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><strong>Figure (2):</strong> SAR Polarization and Scattering Source: NASA Earth Data</figcaption>
+</figure>
+</div>
+<p><strong>Change Detection in SAR</strong></p>
+<p>Change detection in (SAR) images involves identifying changes in land cover over time by examining and contrasting two or more SAR images captured at different times but covering the same geographic region. This method is highly beneficial in remote sensing applications due to SAR’s ability to acquire images regardless of weather conditions and its capability to penetrate clouds and darkness. This technique is of high practical value to a large number of applications, such as flood detection, disaster monitoring, urban planning, and land cover data monitoring. However, the inherent speckle noise in SAR images can lead to false alarms and misdetections.</p>
+</section>
+<section id="application" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> Application</h2>
+<p>In this application section, I’ll delve into the study of change detection in SAR images. While we’ve explored various techniques and methods for change detection in previous lectures, I’ve chosen to focus on a methodology that hasn’t been extensively covered. My aim is to introduce a new approach that offers insights beyond what’s been discussed in class, enriching my understanding and exploration of SAR image analysis for change detection purposes in my latest learning diary entry.</p>
+<p><u><strong>Change Detection in Synthetic Aperture Radar Images based on Image Fusion and Fuzzy Clustering:</strong></u></p>
+<p>This paper highlights the challenges in change detection in Synthetic Aperture Radar (SAR) images, primarily due to speckle noise. The paper suggests the use of the ratio operator over subtraction for SAR images to handle speckle noise and calibration errors. To enhance change detection, it introduces image fusion to combine mean-ratio and log-ratio images. Furthermore, it proposes a robust fuzzy clustering algorithm that incorporates spatial context to improve resistance against noise and enhance change detection accuracy.</p>
+<p><strong>Methodology</strong></p>
+<p>For the methodology they proposed a novel approach for change detection in SAR images, comprising two main steps: generating a difference image through image fusion and detecting changed areas in the fused image using an improved Fuzzy C-Means (FCM) algorithm:</p>
+<ul>
+<li><p><strong>Image Fusion</strong> techniques are employed to enhance image quality, primarily focusing on pixel-level fusion using methods like the discrete wavelet transform (DWT). The DWT efficiently isolates frequencies in time and space, making it suitable for change detection tasks, particularly with large volumes of image data. The fusion process involves computing the DWT of each source image, fusing corresponding coefficients, and applying inverse DWT to obtain the fused result.</p></li>
+<li><p><strong>Fuzzy Clustering</strong>: An improved FCM algorithm is utilized for clustering to discriminate changed and unchanged areas in the fused image. Traditional FCM algorithms often lack robustness to noise, prompting the development of variants like FCM_S and FGFCM, which incorporate local spatial information. However, these approaches require parameter tuning and may still be sensitive to noise. To address this, a robust Fuzzy Local Information C-Means (FLICM) algorithm is proposed, which employs a fuzzy factor to balance noise robustness and image detail preservation. Further improvement is made by replacing spatial distance with the local coefficient of variation to better handle noise and preserve image details, resulting in the reformulated <strong>RFLICM</strong> algorithm.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week9 3.png" class="img-fluid figure-img" width="300"></p>
+<figcaption class="figure-caption"><strong>Figure (3):</strong> Flowchart of the proposed change detection approach.</figcaption>
+</figure>
+</div>
+<section id="experiments" class="level4" data-number="8.2.0.1">
+<h4 data-number="8.2.0.1" class="anchored" data-anchor-id="experiments"><span class="header-section-number">8.2.0.1</span> Experiments</h4>
+<p>To assess the effectiveness of the proposed analyzing method they ran experiments on three different data sets. I will discuss in detail one of them as I believe it is adequate for this section:</p>
+<ul>
+<li><strong>Bern data set</strong></li>
+</ul>
+<p>The efficacy of wavelet image fusion in generating difference images was assessed against mean-ratio and log-ratio methods. The fused difference image effectively captured step changes, suppressing unchanged regions using wavelet coefficients from the log-ratio image. Comparing performance, the log-ratio operator achieved a PCC of 99.27% for Otsu and 99.24% for K-means, while the proposed approach attained the highest PCC (99.35% for Otsu and 99.36% for K-means) and kappa (0.781 for Otsu and 0.784 for K-means). Visual analysis revealed more spots in change detection from the mean-ratio image due to speckle effects, while the log-ratio image had fewer spots but suffered from information loss in changed areas. The wavelet fusion image notably reduced errors in change detection results. In the second experiment, the impact of the RFLICM algorithm on SAR-image change detection, based on wavelet fusion difference images, was assessed. Traditional FCM produced many spots due to its lack of consideration for spatial context. However, FLICM and RFLICM, incorporating local information, yielded robust change detection maps, with RFLICM outperforming FLICM and FCM with a PCC of 99.68%, 99.66%, and 99.37% respectively.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week9 4.png" class="img-fluid figure-img" width="400"></p>
+<figcaption class="figure-caption"><strong>Figure (4):</strong> Change detection results of the Bern data set based on the three difference images obtained by Otsu. (a) Based on the mean-ratio operator. (b) Based on the log-ratio operator. (c) Based on wavelet fusion.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week9 5.png" class="img-fluid figure-img" width="400"></p>
+<figcaption class="figure-caption"><strong>Figure (5):</strong> Change detection results of the Bern data set based on the three difference images obtained by K-means. (a) Based on the mean-ratio operator. (b) Based on the log-ratio operator. (c) Based on wavelet fusion.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week9 6.png" class="img-fluid figure-img" width="400"></p>
+<figcaption class="figure-caption"><strong>Figure (6):</strong> Change detection results of the Bern data set achieved by (a) FCM, (b) FLICM, and (c) proposed RFLICM.</figcaption>
 </figure>
 </div>
 </section>
-<section id="atmospheric-correction." class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="atmospheric-correction."><span class="header-section-number">3.1.2</span> Atmospheric Correction.</h3>
-<p><strong>Atmospheric correction</strong> is the process of eliminating scattering and absorption effects caused by the atmosphere, thereby revealing the surface reflectance that represents surface properties.</p>
-<p><u><strong>Methods to remove the atmosphere effect:</strong></u></p>
-<p><strong>Relative:</strong> involves normalising images, which simplifies comparison with other images instead of directly eliminating atmospheric effects. One common technique for relative correction is <strong>Dark Object Subtraction (DOS),</strong> where dark objects with very low reflectance are subtracted from the image. This process not only standardizes the image but also mitigates atmospheric effects.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="atmospheric_relative.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (2)</strong> Dark pixel subtraction source: (Remote Sensing Research center https://www.rsrc.org.au/)</figcaption>
-</figure>
-</div>
-<p><strong>Absolute:</strong> involves assessing atmospheric conditions, along with the angles of illumination and viewing during image acquisition, to estimate the levels of scattering and absorption for each image band. Based on these factors, correction factors are determined to adjust the data from its initial at-sensor values to more accurate at-surface values.</p>
-<p><strong>Empirical line method:</strong> is an atmospheric correction technique that offers an alternative to radiative transfer modeling approaches. It provides a relatively straightforward approach to calibrating surface reflectance, as long as a series of calibration target measurements that remain constant over time are accessible.</p>
-<p><u><strong>Phases of Atmospheric Correction</strong></u></p>
-<p>Atmospheric correction is a two-phase process. In the initial phase, Digital Numbers (DNs) are transformed into radiance, and subsequently into top-of-atmosphere radiance. In the subsequent phase, top-of-atmosphere reflectance is converted to surface reflectance, also known as bottom-of-atmosphere reflectance or top-of-canopy reflectance, particularly in vegetation studies. The output image from this process is referred to as atmospherically corrected.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="phases of atmospheric correction.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (3)</strong> Phases of Atmospheric correction source: (https://www.linkedin.com/pulse/atmospheric-correction-dinesh-shrestha/)</figcaption>
-</figure>
-</div>
+<section id="conclusion" class="level4" data-number="8.2.0.2">
+<h4 data-number="8.2.0.2" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">8.2.0.2</span> Conclusion</h4>
+<p>The method used in change detection in (SAR) images, which combines wavelet image fusion and an improved fuzzy clustering algorithm, Robust Fuzzy Local Information C-Means (RFLICM). This method stands out from other methods like image differencing technique which often struggle due to the presence of speckle noise and the multiplicative nature of speckles, as well as the statistical properties of SAR images being non-robust to calibration errors. The wavelet fusion approach in the proposed method enhances changed region information and suppresses background noise by integrating mean-ratio and log-ratio images. Meanwhile, the RFLICM algorithm incorporates local spatial and gray information, making it more precise and less sensitive to the probability statistics model than traditional thresholding techniques. Experimental results show that this method outperforms traditional ones, with the wavelet fusion strategy integrating the advantages of log-ratio and mean-ratio operators, and RFLICM exhibiting fewer errors and spots in change detection results. I really like this approach because and according to my understanding this can be useful in providing a more accurate reflection for real world changes and better suppression of background noise.</p>
 </section>
 </section>
-<section id="application" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
-<p>Applying atmospheric corrections on satellite images is a crucial step that should be performed before conducting any further analysis or processing using those images. However, as we saw earlier, there are multiple approaches with different techniques that varies from image-based empirical correction to model-based methods. Each one of these techniques has its strength and weakness and, in this section, we will highlight two main studies that compared between different approaches like (QUAC, FLAASH and DOS). Those studies are <strong>“<em>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery</em>”</strong> (Shi, Mao, 2016) and <strong>“<em>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Image</em>s”</strong> (Niraj, Gupta 2022).</p>
-<p><u><strong>Comparison for HICO hyperspectral imagery paper:</strong></u></p>
-<p>This study concludes that all three types of corrections (FLAASH, QUAC, DOS) can remove the effect of atmosphere for HICO hyperspectral image. It also confirms that based on analysing the situ data, FLAASH model have a better performance than QUAC and DOS methods for reducing effect of atmosphere HICO images. Having said that, both QUAC and DOS depend on less input parameters and their computational speed is much faster than FLAASH.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="week3 comparison 1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p><u><strong>Comparison for extracting snow and vegetation cover in Nepal Himalayas paper:</strong></u></p>
-<p>In this study, eight correction methods were applied on Landsat 8 OLI satellite image to find the best model for mapping snow and vegetation covered areas. The study found that FLAASH and 6SV methods determined best snow reflectance values, while DOS3 and QUAC were the worst. Additionally, FLAASH and SIAC methods showed greater vegetation reflectance values and higher ranks of correlating the extracted vegetation spectra with the standard spectra while DOS and QUAC were the lowest.</p>
-<p>The study found when compared to other image-based correction methods (QUAC, Aref, COST, DOS, and DOS3), the FLAASH, SIAC, and 6SV methods generate higher snow and vegetation mean reflectance values, thus having a high possibility of mapping true snow and vegetation features.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="week3 comparison 2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="week3 comparison 3.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<section id="conclusion" class="level4" data-number="3.2.0.1">
-<h4 data-number="3.2.0.1" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.2.0.1</span> <strong>Conclusion</strong></h4>
-<p>Both studies explore different atmospheric correction methods for remote sensing imagery, with a focus on varying types of imagery and target variables. The first study evaluates FLAASH, QUAC, and DOS correction methods for HICO hyperspectral imagery, concluding that FLAASH performs better in removing atmospheric effects despite its slower computational speed. In contrast, the second study assesses eight correction methods applied to Landsat 8 OLI satellite imagery to map snow and vegetation cover in the Nepal Himalayas, finding that FLAASH and SIAC methods produce superior results for snow and vegetation reflectance. Ultimately, it’s not possible to determine that one method is superior to another. Therefore, the selection of an atmospheric correction method relies on the specific objectives and characteristics of the remote sensing analysis.</p>
+<section id="reflection" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
+<p>It was really interesting to cover and go deep in the change detection of SAR images methods. For me I feel like because I’m interested In the usig sattelite images and remote sensing to lectures slide it was mentioned that in Image fusion we havent covered some of the methods that are used in the application section so i got curios about it and to figure out and did some research to understand it is principles.</p>
 </section>
-</section>
-<section id="reflection" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
-<p>To be honest, this lecture was quite challenging and lengthy, making it difficult to fully understand. Handling satellite images can indeed be tricky, yet mastering the art of manipulating them can prove invaluable for emphasizing specific points or shedding light on particular aspects. Understanding the various correction methods available is essential, as each method serves a distinct purpose. Moreover, selecting the appropriate method depends on the variables and characteristics of the analysis at hand. While I hope to avoid the need for performing corrections myself, as you mentioned, gaining insight into these behind-the-scenes processes has been enlightening and beneficial.</p>
-</section>
-<section id="reference" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">3.4</span> Reference</h2>
-<p>What is Atmospheric Correction in Remote Sensing?</p>
-<p>(<a href="https://gisgeography.com/atmospheric-correction/" class="uri">https://gisgeography.com/atmospheric-correction/</a>)</p>
-<p>Atmospheric Correction</p>
-<p>(<a href="https://www.linkedin.com/pulse/atmospheric-correction-dinesh-shrestha/" class="uri">https://www.linkedin.com/pulse/atmospheric-correction-dinesh-shrestha/</a>)</p>
-<p>Remote Sensing Research Center</p>
-<p>(<a href="https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/atmospheric/resources/fundamentals/corrections/physics-based.html#:~:text=Absolute%20atmospheric%20corrections,sensor%20to%20at%2Dsurface%20values." class="uri">https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/atmospheric/resources/fundamentals/corrections/physics-based.html#:~:text=Absolute%20atmospheric%20corrections,sensor%20to%20at%2Dsurface%20values.</a>)</p>
-<p>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery(Shi, Mao, 2016)</p>
-<p>()</p>
-<p>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Images (Niraj, Gupta 2022).</p>
-<p>()</p>
+<section id="reference" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">8.4</span> Reference</h2>
+<p><strong>Change Detection on SAR Images</strong></p>
+<p><strong>Deep Learning-Based Suppression of Speckle-Noise in Synthetic Aperture Radar (SAR) Images: A Comprehensive Review</strong></p>
+<p><a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar" class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a></p>
 
 
 </section>
@@ -520,13 +521,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week 2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2 Xaringan: Crafting Stunning Presentations</span></span>
+      <a href="./week 8.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 8 classification:</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week 4.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 policy: Transformative Shifts</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

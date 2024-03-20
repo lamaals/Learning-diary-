@@ -23,6 +23,8 @@ book:
     
     - week 8.qmd
     
+    - week 9.qmd
+    
     - references.qmd
 
 bibliography: references.bib

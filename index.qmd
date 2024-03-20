@@ -4,6 +4,6 @@ Hi, I'm Lama, I come from a background in architecture and urban planning. Follo
 
 Beside Architecture, urban planning and construction I really love taking photos , capturing beautiful moments, and travailing around the world
 
-![Me on of the construction site (on the corner of a flying canopy)](images/IMG-20220207-WA0034-01.jpg){width="810"}
+![Me on of the construction site (on the corner of a flying canopy)](images/IMG-20220207-WA0034-01.jpg){fig-align="center" width="400"}
 
-![Richmond park Deers this was captured by me.](images/IMG_20230818_180230_921.jpg)
+![Richmond park Deers this was captured by me.](images/IMG_20230818_180230_921.jpg){fig-align="center" width="400"}
