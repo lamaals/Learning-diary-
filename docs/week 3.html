@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -132,25 +151,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 GEE: Mapping the world</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5 GEE: Mapping the world</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 Classification I: Navigating Machine learning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 Classification I: Navigating Machine learning</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 8 classification:</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week 9 SAR:</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week 8 SAR: Reveling SAR</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -171,8 +190,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#geometric-correction." id="toc-geometric-correction." class="nav-link" data-scroll-target="#geometric-correction."><span class="header-section-number">3.1.1</span> Geometric Correction.</a></li>
-  <li><a href="#atmospheric-correction." id="toc-atmospheric-correction." class="nav-link" data-scroll-target="#atmospheric-correction."><span class="header-section-number">3.1.2</span> Atmospheric Correction.</a></li>
+  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction"><span class="header-section-number">3.1.1</span> Geometric Correction</a></li>
+  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric Correction</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.2</span> Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
@@ -202,43 +221,43 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
-<p>In this lecture, we had a look about the difference between Push broom and Whisk broom Sensors, then we discovered that satellite images usually might has flaws. Geometric Correction, Atmospheric Correction, Topographic Correction, and Radiometric are all methods to correct the remote sensing products. The next part of the lecture was about the joining data techniques and how to make enhancement on the images.</p>
-<section id="geometric-correction." class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="geometric-correction."><span class="header-section-number">3.1.1</span> Geometric Correction.</h3>
-<p>The process involves taking the coordinates of the dataset, applying a mathematical model to determine the transformation coefficients, and then using these coefficients to perform the geometric transformation, effectively altering the spatial arrangement of the features in the dataset. In other words it is the <strong>“</strong> attempt to correct for positional errors and to transform the original image into a new image that has the geometric characteristics of a map. can you rephrase<strong>” I should add the citation</strong> (<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/geometric-correction#:~:text=Geometric%20corrections%20attempt%20to%20correct,geometric%20characteristics%20of%20a%20map." class="uri">https://www.sciencedirect.com/topics/earth-and-planetary-sciences/geometric-correction#:~:text=Geometric%20corrections%20attempt%20to%20correct,geometric%20characteristics%20of%20a%20map.</a>)</p>
+<p>For this week, we were introduced to Push Broom and Whisk Broom sensors, including differences between them. Then we explored Geometric Correction, Atmospheric Correction, Topographic Correction, and Radiometric which are all methods used in the correction of remote sensing products, as satellite images usually might have flaws. Furthermore, we continued to cover the techniques for joining data and applying enhancement on satellite images.</p>
+<section id="geometric-correction" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.1</span> Geometric Correction</h3>
+<p>First the coordination’s of the dataset are fed into a mathematical model in order to specify the transformation coefficients then in order to execute a geometric transformation the coefficients will be used which eventually lead to effectively altering the spatial arrangement in the dataset. In other words it is the <strong>“</strong> attempt to correct for positional errors and to transform the original image into a new image that has the geometric characteristics of a map. can you rephrase<strong>“</strong><span class="citation" data-cites="fagan2024">(<a href="references.html#ref-fagan2024" role="doc-biblioref">Fagan and DeFries 2024</a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="geometric coorection.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (1):</strong> Geometric Correction process</figcaption>
+<figcaption class="figure-caption"><strong>Figure (1):</strong> Geometric Correction process. <span class="citation" data-cites="geometri">(<a href="references.html#ref-geometri" role="doc-biblioref"><span>“Geometric Corrections - AWF-Wiki,”</span> n.d.</a>)</span></figcaption>
 </figure>
 </div>
 </section>
-<section id="atmospheric-correction." class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="atmospheric-correction."><span class="header-section-number">3.1.2</span> Atmospheric Correction.</h3>
-<p><strong>Atmospheric correction</strong> is the process of eliminating scattering and absorption effects caused by the atmosphere, thereby revealing the surface reflectance that represents surface properties.</p>
+<section id="atmospheric-correction" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric Correction</h3>
+<p><strong>Atmospheric correction</strong> is the process of scattering and absorption effect removal which are caused by the atmosphere, thus showing the surface reflectance that represents surface properties.</p>
 <p><u><strong>Methods to remove the atmosphere effect:</strong></u></p>
-<p><strong>Relative:</strong> involves normalising images, which simplifies comparison with other images instead of directly eliminating atmospheric effects. One common technique for relative correction is <strong>Dark Object Subtraction (DOS),</strong> where dark objects with very low reflectance are subtracted from the image. This process not only standardizes the image but also mitigates atmospheric effects.</p>
+<p><strong>Relative:</strong> This method facilitates the comparison with other images instead of directly removing atmospheric effects by normalising images. Relative correction most common technique is <strong>Dark Object Subtraction (DOS)</strong>, where dark objects with very low reflectance are deducted from the image. This procedure allow the standardization of the images and the mitigation of atmospheric effects.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="atmospheric_relative.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (2)</strong> Dark pixel subtraction source: (Remote Sensing Research center https://www.rsrc.org.au/)</figcaption>
+<figcaption class="figure-caption"><strong>Figure (2)</strong> Dark pixel subtraction. <span class="citation" data-cites="mariner">(<a href="references.html#ref-mariner" role="doc-biblioref"><span>“Marine Remote Sensing Toolkit,”</span> n.d.</a>)</span></figcaption>
 </figure>
 </div>
-<p><strong>Absolute:</strong> involves assessing atmospheric conditions, along with the angles of illumination and viewing during image acquisition, to estimate the levels of scattering and absorption for each image band. Based on these factors, correction factors are determined to adjust the data from its initial at-sensor values to more accurate at-surface values.</p>
-<p><strong>Empirical line method:</strong> is an atmospheric correction technique that offers an alternative to radiative transfer modeling approaches. It provides a relatively straightforward approach to calibrating surface reflectance, as long as a series of calibration target measurements that remain constant over time are accessible.</p>
+<p><strong>Absolute:</strong> Includes the evaluation of the atmospheric conditions along with the angles of illumination and observation during the capture of the image in order to assess the level of scattering and absorption for each image band. Using these factors, the correction factors are calculated to modify the data from its original at-sensor values to establish more accurate at-surface values.</p>
+<p><strong>Empirical line method:</strong> This technique provides an replacement to radiative transfer modelling approaches. It offers a clear approach to calibrating surface reflectance, unless the accessibility of calibration measurements that are static over time is guaranteed.</p>
 <p><u><strong>Phases of Atmospheric Correction</strong></u></p>
 <p>Atmospheric correction is a two-phase process. In the initial phase, Digital Numbers (DNs) are transformed into radiance, and subsequently into top-of-atmosphere radiance. In the subsequent phase, top-of-atmosphere reflectance is converted to surface reflectance, also known as bottom-of-atmosphere reflectance or top-of-canopy reflectance, particularly in vegetation studies. The output image from this process is referred to as atmospherically corrected.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="phases of atmospheric correction.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (3)</strong> Phases of Atmospheric correction source: (https://www.linkedin.com/pulse/atmospheric-correction-dinesh-shrestha/)</figcaption>
+<figcaption class="figure-caption"><strong>Figure (3)</strong> Phases of Atmospheric correction. [@(26)atm]</figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
-<p>Applying atmospheric corrections on satellite images is a crucial step that should be performed before conducting any further analysis or processing using those images. However, as we saw earlier, there are multiple approaches with different techniques that varies from image-based empirical correction to model-based methods. Each one of these techniques has its strength and weakness and, in this section, we will highlight two main studies that compared between different approaches like (QUAC, FLAASH and DOS). Those studies are <strong>“<em>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery</em>”</strong> (Shi, Mao, 2016) and <strong>“<em>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Image</em>s”</strong> (Niraj, Gupta 2022).</p>
+<p>Applying atmospheric corrections on satellite images is a crucial step that should be performed before conducting any further analysis or processing using those images. However, as we saw earlier, there are multiple approaches with different techniques that varies from image-based empirical correction to model-based methods. Each one of these techniques has its strength and weakness and, in this section, we will highlight two main studies that compared between different approaches like (QUAC, FLAASH and DOS). Those studies are <strong>“<u><em>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery</em></u>”</strong> (Shi, Mao, 2016) and <strong>“<u><em>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Image</em>s</u>”</strong> (Niraj, Gupta 2022).</p>
 <p><u><strong>Comparison for HICO hyperspectral imagery paper:</strong></u></p>
 <p>This study concludes that all three types of corrections (FLAASH, QUAC, DOS) can remove the effect of atmosphere for HICO hyperspectral image. It also confirms that based on analysing the situ data, FLAASH model have a better performance than QUAC and DOS methods for reducing effect of atmosphere HICO images. Having said that, both QUAC and DOS depend on less input parameters and their computational speed is much faster than FLAASH.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -282,6 +301,17 @@ ul.task-list li input[type="checkbox"] {
 <p>()</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-fagan2024" class="csl-entry" role="listitem">
+Fagan, Matthew E., and Ruth S. DeFries. 2024. <span>“Remote Sensing and Image Processing.”</span> In, edited by Samuel M. Scheiner, 432–45. Oxford: Academic Press. <a href="https://doi.org/10.1016/B978-0-12-822562-2.00060-8">https://doi.org/10.1016/B978-0-12-822562-2.00060-8</a>.
+</div>
+<div id="ref-geometri" class="csl-entry" role="listitem">
+<span>“Geometric Corrections - AWF-Wiki.”</span> n.d. <a href="http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections">http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections</a>.
+</div>
+<div id="ref-mariner" class="csl-entry" role="listitem">
+<span>“Marine Remote Sensing Toolkit.”</span> n.d. <a href="https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/marine/resources/fundamentals/corrections/atmospheric_relative-1.html">https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/marine/resources/fundamentals/corrections/atmospheric_relative-1.html</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

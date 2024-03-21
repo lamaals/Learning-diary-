@@ -1,5 +1,5 @@
 ---
-title: "week 8 classification: "
+title: "week 7 classification: Indepth "
 ---
 
 ## Summary
@@ -99,6 +99,8 @@ The figure depicts the land cover changes in the study area from 1990 to 2006, p
 Both studies propose distinct methodologies for analyzing land cover changes using remote sensing data. Study 1 focuses on sub-pixel level change detection, employing an unmixing algorithm to ascertain endmember proportions within pixels and decision-level fusion techniques to identify changes based on defined criteria. Results from experiments on multi-temporal China-Brazil earth resources satellite images demonstrate reliable change detection, providing detailed change information and achieving higher accuracy compared to traditional methods. On the other hand, Study 2 introduces a novel object-based classification approach involving preprocessing, image segmentation, and non-parametric classification algorithms. Despite challenges in distinguishing certain change types, the method demonstrates satisfactory accuracy and offers insights into land cover changes over time. While Study 1 offers more detailed change information, Study 2's approach may be more suitable for analyzing complex land cover changes. Ultimately, the choice between the two methods depends on the specific requirements and objectives of the analysis.
 
 ## Reflection
+
+Today\'s lecture was interesting for me because it has expanded my understanding of remote sensing techniques that goes beyond CART, RF, and SVM. Honestly, I got lost in which of these two approaches is more fascinating.  In OBIA we approach image analysis is not only based on individual pixels but also by making them into groups of meaningful objects. While Sub-Pixels analysis mainly work on allowing the detection of changes on individual pixels level. The Sub-Pixels method can be useful to use in case of urban environments or transitional ecosystems. I think that in the future this could help in various fields such as environmental monitoring, urban planning (which I find interesting), and disaster management. Furthermore, I believe that it is important to understand the use of these techniques as they might have a crucial role in addressing new challenges such as climate change impacts, habitat loss and urbanization by helping policymakers and stakeholders with detailed information that would help in the decision-making process.
 
 ## Reference
 

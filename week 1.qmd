@@ -4,31 +4,33 @@ title: "Week 1 Remote sensing: an Arial adventure"
 
 ## Summary
 
-In this lecture, we delved into the world of remotely sensing cities, and learned about the methods used to collect data using sensors that are mounted on various of platforms (space-borne/airborne). We explored the two main types of sensors: passive, which detect natural radiation, and active, which emit their own radiation. We also explored the differences between Sentinel 2 and Landsat satellites in terms of spectral bands, spatial resolution, and revisit frequency. Finally, we discussed that electromagnetic radiation can be obstructed by surfaces or the atmosphere, causing absorption, transmission, or scattering.
+For the first lecture in this module, we got introduced to the world of remote sensing cities, where we discovered the methods used for data collection using sensors that are mounted on diverse platforms (space-borne/airborne). Then we discussed the two types of sensors: passive which perceive natural radiation, and active, which radiate their own radiation. Then we explored the differences in terms of spectral bands, spatial resolution, and revisit frequency between Sentinel 2 and Landsat satellites. Finally, the attractive part for me was to know that electromagnetic radiation can be obstructed by surfaces or atmosphere which cause absorption,transmission, or scattering.
 
-[![Figure (1): Active and Passive sensors. website: (https://www.balamis.com/technology/)](active%20and%20passive%20sensors%20.gif){fig-align="center" width="500"}](https://www.balamis.com/technology/)
+[![**Figure (1):** Active and Passive sensors. [@technolo]](active%20and%20passive%20sensors%20.gif){fig-align="center" width="500"}](https://www.balamis.com/technology/)
 
 ### Remote sensing definition
 
-According to NASA "Remote sensing is the acquiring of information from a distance". By observing the energy response (reflected, transmitted) and recording information then use it in responding to hazards, apply energy studies utilizing, urban planning, and environmental treaty enforcement.....etc.
+According to NASA "Remote sensing is the acquiring of information from a distance" [@earthsciencedatasystems2019]. By observing the energy response (reflected, transmitted) and recording information then use it in responding to hazards, apply energy studies utilizing, urban planning, and environmental treaty enforcement.....etc.
 
 ### The process of remote sensing
 
 Electromagnetic energy, created by moving charged particles, travels in waves through space and the atmosphere. These waves vary in length and frequency; shorter waves have higher frequencies. Electromagnetic waves might get obstructed by a surface or atmosphere which cause scattering for the short wave such as blues and then it reflects back to be recorded and processed to information/data.
 
-[![Figure (2): the remote sensing process website: (https://paititi.info/research-technology/remote-sensing-from-space/)](4-1-Remote-Sensing-Process-1024x455.png){fig-align="center" width="500"}](https://paititi.info/research-technology/remote-sensing-from-space/)
+[![**Figure (2):** the remote sensing process. [@remotes]](4-1-Remote-Sensing-Process-1024x455.png){fig-align="center" width="500"}](https://paititi.info/research-technology/remote-sensing-from-space/)
 
 ### Sentinel-2 VS Landsat
 
-**Sentinel-2** The SENTINEL-2 mission consists of two satellites orbiting in the same path around the Earth, but spaced 180° apart. They're designed to continuously observe changes in land surface conditions. With a wide coverage area and a rapid revisit time of 10 days at the equator.
+**Sentinel-2** contains two satellites orbiting around the earth in the same path, but 180° spaced apart. These two satellites have a rapid visit time of 10 days at the equator and a wide area of coverage as they are designed to continuously detect changes in land surface conditions.
 
-**Landsat 8** The Landsat 8 satellite carries two main instruments: the Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS). These sensors capture images of the Earth's surface at various resolutions, including 30 meters for visible, near-infrared, and short-wave infrared data; 100 meters for thermal data; and 15 meters for panchromatic data
+**Landsat 8** holds two main instruments which are: the Operational Land Images (OLI) and the Thermal Infrared Sensor (TIRS). These sensors works on providing images of the earth surface at several resolution, and that includes for visible, near-infrared, and short infrared a 30m, for Thermal data 100m, and for panchromatic data a 15m.
 
 ## Application
 
-Landsat and Sentinel 2 have been used extensively in different fields including land use planning and monitoring, emergency response and management, water use monitoring and others. Each one of those two methods has its strengths and to understand those strengths, we will leverage an analysis that was conducted to evaluate and compare between those two data sources in forest fires mapping article. This analysis compares and assesses spectral indices derived from Sentinel-2 and Landsat-8 OLI imagery and to identify the most appropriate iindex for each sensor for accurately mapping forest fires, using as a case study two fire events that occurred in summer 2017 in northern Tunisia (Achour et al. 2022, Toujani et al. 2022).
+Landsat and Sentinel 2 have been used extensively in different fields including land use planning and monitoring, emergency response and management, water use monitoring and others. Each one of those two methods has its strengths and to understand those strengths, I will discuss an analysis that was conducted to evaluate and compare two data sources in forest fires mapping which is: [***Evaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia:***]{.underline}
 
-[![Figure (2): Sentinel 2A Multi Spectral Instrument (MSI) and Landsat-8 Operational Land Imager (OLI) satellite images were acquired before (pre-fire) and after (post-fire) the fires from the U.S. Geological Survey (USGS) website (https://earthexplorer.usgs.gov/).](application%201.jpg){fig-align="center" width="500"}](https://earthexplorer.usgs.gov/)
+This analysis compares and assesses spectral indices derived from Sentinel-2 and Landsat-8 OLI imagery and to identify the most appropriate index for each sensor for accurately mapping forest fires, using as a case study two fire events that occurred in summer 2017 in northern Tunisia (Achour et al. 2022, Toujani et al. 2022).
+
+[![Figure (3): Sentinel 2A Multi Spectral Instrument (MSI) and Landsat-8 Operational Land Imager (OLI) satellite images were acquired before (pre-fire) and after (post-fire) the fires from the U.S. Geological Survey (USGS)](application%201.jpg){fig-align="center" width="500"}](https://earthexplorer.usgs.gov/)
 
 ### Discussion
 
@@ -36,19 +38,19 @@ Results from this study highlight those spectral indices including NIR-SWIR band
 
 In the figure below, we can see that spectral indices derived from Landsat 8, especially those combining the Red-NIR bands such as ΔNDVI, ΔEVI and ΔMSAVI exhibited a higher spectral separability as compared to their counterparts generated from Sentinel bands in both fires.
 
-![Figure (3): M-statistic values to discern burned/unburned areas for both Sentinel 2 (S) and Landsat-8 OLI (L) spectral indices](application2.jpg){fig-align="center" width="500"}
+![**Figure (4):** M-statistic values to discern burned/unburned areas for both Sentinel 2 (S) and Landsat-8 OLI (L) spectral indices](application2.jpg){fig-align="center" width="500"}
 
 Maps of the estimated burned areas from each spectral index and for each fire reveals that both Landsat 8 and Sentinel-2A can capture the boundaries of fires identified using Copernicus EMS reference maps, albeit with small differences between burned areas, retrieved from each sensor.
 
 Sentinel-based spectral indices (ΔNBRn and RBR) provided the highest level of positional accuracy, with a loc value of about 60 metres. This means that the positions of the extracted fires were shifted approximately by three pixels from their positions in the reference map. However, Landsat-based spectral indices, RBR and ΔNBR, displayed a loc value of about 75 meters, suggesting that the position of the extracted fires were shifted approximately 2.5 pixels from their positions in the reference map. The advantage of Sentinel 2A in terms of positional accuracy could be attributed to its higher spatial resolution as compared to Landsat 8.
 
-![Figure (4): Distribution of burned and unburned values for spectral indices selected for F1 / F2](application%203.jpg){fig-align="center" width="500"}
+![**Figure (5):** Distribution of burned and unburned values for spectral indices selected for F1 / F2](application%203.jpg){fig-align="center" width="500"}
 
-![Figure (5): Spectral indices vs. Copernicus EMS fire polygon for the Haddada fire](application%204.jpg){fig-align="center" width="500"}
+![**Figure (6):** Spectral indices vs. Copernicus EMS fire polygon for the Haddada fire](application%204.jpg){fig-align="center" width="500"}
 
 ### Conclusion
 
-The study concluded that (1) regardless of the sensor, spectral indices that incorporated NIR-SWIR bands exceed those using red and NIR bands in terms of spectral separability; (2) from the viewpoint of accuracy, the Sentinel sensor is slightly more efficient than the Landsat 8 in mapping burned scars, but both sensors produce similar and acceptable results. Hence, this paper concludes that both sensors are a good alternative to EFFIS data, particularly when there is a need to detect details inside the fire. **I still have to add so what and why it is useful:**
+The study concluded that (1) regardless of the sensor, spectral indices that incorporated NIR-SWIR bands exceed those using red and NIR bands in terms of spectral separability; (2) from the viewpoint of accuracy, the Sentinel sensor is slightly more efficient than the Landsat 8 in mapping burned scars, but both sensors produce similar and acceptable results. Hence, this paper concludes that both sensors are a good alternative to EFFIS data, particularly when there is a need to detect details inside the fire. From those results we can clearly see that both Sentinel and Landsat 8 sensors are very powerful in detecting burned areas affecting forests or residential areas, this can be applied in different context whether in responding to catastrophes or implementing new policies to protect those affect areas. Obviously this can be expanded in further studies and applied to other environmental issues like deforestation and many more.
 
 ## Reflection
 
@@ -56,22 +58,22 @@ This lecture wasn't easy to digest ***at first,*** as there was a lot of new ide
 
 # References {.unnumbered}
 
-Evaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia.
+**Evaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia.** (Achour.H, Toujani.A 2021).
 
 <https://www.tandfonline.com/doi/full/10.1080/10106049.2021.1980118>
 
-SENTINEL-2 MISSION GUIDE.
+**SENTINEL-2 MISSION GUIDE.**
 
 <https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2>
 
-LANDSAT 8
+**LANDSAT 8**
 
 <https://landsat.gsfc.nasa.gov/satellites/landsat-8/>
 
-Satellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine.
+**Satellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine.** (Ialongo.I, Bun.R 2023).
 
 <https://www.nature.com/articles/s41598-023-42118-w>
 
-What is Remote Sensing?
+**What is Remote Sensing?**
 
 <https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing>
