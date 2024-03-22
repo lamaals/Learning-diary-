@@ -53,9 +53,9 @@ bibliography: references.bib
 
 format:
   html:
-    title-block-banner: cover.jpg
-    #cover-image: img/UCL_square.jpeg
-  #css: textures.css
+    title-block-banner: banner3.jpg
+
+
     theme: 
     # textures.css
         light: [cerulean, flatly]
