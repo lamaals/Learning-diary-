@@ -58,7 +58,7 @@ Both studies explore different atmospheric correction methods for remote sensing
 
 ## Reflection
 
-To be honest, today\'s lecture was kind of challenging and long, which makes it hard to fully understand. To work on satellite images can by tricky, yet it\'s important to be able to manipulate them which can prove invaluable for emphasising specific points. It is crucial to understand the various correction methods, as each method serves a specific purpose. Furthermore, the selection of the appropriate approach depends on the variables and characteristics of the analysis. While I really hope to avoid performing correction myself, but I think It is important to know how to apply these methods and when.
+To be honest, today's lecture was kind of challenging and long, which makes it hard to fully understand. To work on satellite images can by tricky, yet it's important to be able to manipulate them which can prove invaluable for emphasising specific points. It is crucial to understand the various correction methods, as each method serves a specific purpose. Furthermore, the selection of the appropriate approach depends on the variables and characteristics of the analysis. While I really hope to avoid performing correction myself, but I think It is important to know how to apply these methods and when.
 
 ## Reference
 

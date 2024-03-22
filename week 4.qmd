@@ -4,7 +4,7 @@ title: "Week 4 policy: Transformative Shifts "
 
 ## Summary
 
-In this week, we focused on applying remote sensing to accomplish policy objectives. Then we were asked to select a city and identify policy challenges that could be then addressed using remote sensing. I\'m really intrigued by the observation and analysis of cities affected by conflict. I believe that by leveraging satellite images we can assess the economic, environmental, and social impact of war, which can help in the decision-making process. Hence, I have chosen to study the impact of war on Ukraine.
+In this week, we focused on applying remote sensing to accomplish policy objectives. Then we were asked to select a city and identify policy challenges that could be then addressed using remote sensing. I'm really intrigued by the observation and analysis of cities affected by conflict. I believe that by leveraging satellite images we can assess the economic, environmental, and social impact of war, which can help in the decision-making process. Hence, I have chosen to study the impact of war on Ukraine.
 
 As highlighted in the **Sustainable Development Goals** agenda:
 
@@ -64,7 +64,7 @@ This can be done through the use of couple of methods like:
 
 -   Satellite data from the VIIRS thermal imager utilization to monitor socio-economic developments, using Total Light Intensity (TLI) serving as an indicator of night illumination, reflecting economic activity, population density, and electricity consumption.
 
-[**Monitor environment and air quality**]{.underline} [@savenets2023][**:**]{.underline}
+[**Monitor environment and air quality**]{.underline} [@savenets2023]\[**:**\]{.underline}
 
 -   Employing NO2 and CO satellite data, filtering the data fields using a quality assurance index and binned into regular grids for reliability and comparison.
 
