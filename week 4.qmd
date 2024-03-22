@@ -4,9 +4,7 @@ title: "Week 4 policy: Transformative Shifts "
 
 ## Summary
 
-In week 4, the primary emphasis was on utilizing remote sensing to accomplish policy objectives. We were tasked with selecting a city and identifying policy challenges that could be addressed using remotely sensed data.
-
-I am deeply intrigued by the observation and analysis of cities affected by conflict. I am convinced that leveraging satellite imagery to assess the economic, environmental, and social repercussions of war plays a vital role in formulating decisions that benefit the city's well-being. This may help urban planners in implementing effective solutions for post-war urban development. Hence, I have chosen to study the impact of war on the socio-economic, environmental, and building damage aspects of Ukraine.
+In this week, we focused on applying remote sensing to accomplish policy objectives. Then we were asked to select a city and identify policy challenges that could be then addressed using remote sensing. I\'m really intrigued by the observation and analysis of cities affected by conflict. I believe that by leveraging satellite images we can assess the economic, environmental, and social impact of war, which can help in the decision-making process. Hence, I have chosen to study the impact of war on Ukraine.
 
 As highlighted in the **Sustainable Development Goals** agenda:
 
@@ -22,7 +20,7 @@ The use of remotely sensed data would be appropriate in this sensitive condition
 
 [**War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images:**]{.underline}
 
-In this study, medium-resolution satellite imagery was utilized because it is publicly available and capable of rapidly producing damage maps, which can serve as an initial reference for assessing damage.
+In this study, medium-resolution satellite imagery was used because it is publicly available and capable of rapidly producing damage maps, which can serve as an initial reference for assessing damage.
 
 Sentinel-1 and Sentinel-2 data were used assess building damage, a robust SAR log ratio of intensity method is utilized for Sentinel-1 data, and a texture analysis is conducted for Sentinel-2 data for damage assessment. To focus on urban areas and suppress changes from other features and landcover types, a built-up area mask is generated using OpenStreetMap building footprints and the World Settlement Footprint (WSF) dataset, respectively.
 
