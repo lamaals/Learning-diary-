@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -144,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -204,11 +223,11 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week9.gif" class="img-fluid figure-img" width="400"></p>
-<figcaption class="figure-caption"><strong>Figure (1):</strong> Synthetic Aperture Radar (SAR)</figcaption>
+<figcaption class="figure-caption"><strong>Figure (1):</strong> Synthetic Aperture Radar (SAR). <span class="citation" data-cites="sar">(<a href="references.html#ref-sar" role="doc-biblioref"><span>“SAR,”</span> n.d.</a>)</span></figcaption>
 </figure>
 </div>
 <p><strong>SAR Polarization and Scattering Mechanisms</strong></p>
-<p>Polarization refers to the orientation of the plane in which the transmitted electromagnetic wave swings. SAR sensors usually transmit linearly polarized whereby the advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signal strength of different polarizations carries information about the imaged surface structure, based on different types of scattering which are rough surface, volume, and double bounce scattering.</p>
+<p>Polarization refers to the orientation of the plane in which the transmitted electromagnetic wave swings. SAR sensors usually transmit linearly polarized whereby the advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signal strength of different polarizations carries information about the imaged surface structure, based on different types of scattering which are rough surface, volume, and double bounce scattering. <span class="citation" data-cites="earthsciencedatasystems2020">(<a href="references.html#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span></p>
 <ul>
 <li><p>Rough surface scattering, such as that caused by bare soil or water, is most sensitive to VV scattering.</p></li>
 <li><p>Volume scattering, for example, caused by the leaves and branches in a forest canopy, is most sensitive to cross-polarized data like VH or HV.</p></li>
@@ -218,16 +237,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week9 2.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (2):</strong> SAR Polarization and Scattering Source: NASA Earth Data</figcaption>
+<figcaption class="figure-caption"><strong>Figure (2):</strong> SAR Polarization and Scattering. <span class="citation" data-cites="earthsciencedatasystems2020">(<a href="references.html#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span></figcaption>
 </figure>
 </div>
 <p><strong>Change Detection in SAR</strong></p>
-<p>Change detection in (SAR) images involves identifying changes in land cover over time by examining and contrasting two or more SAR images captured at different times but covering the same geographic region. This method is highly beneficial in remote sensing applications due to SAR’s ability to acquire images regardless of weather conditions and its capability to penetrate clouds and darkness. This technique is of high practical value to a large number of applications, such as flood detection, disaster monitoring, urban planning, and land cover data monitoring. However, the inherent speckle noise in SAR images can lead to false alarms and misdetections.</p>
+<p>Change detection in (SAR) images involves identifying changes in land cover over time by examining and contrasting two or more SAR images captured at different times but covering the same geographic region. This method is highly beneficial in remote sensing applications due to SAR’s ability to acquire images regardless of weather conditions and its capability to penetrate clouds and darkness. This technique is of high practical value to a large number of applications, such as flood detection, disaster monitoring, urban planning, and land cover data monitoring. However, the inherent speckle noise in SAR images can lead to false alarms and misdetections. <span class="citation" data-cites="shukla2023">(<a href="references.html#ref-shukla2023" role="doc-biblioref">Shukla et al. 2023</a>)</span></p>
 </section>
 <section id="application" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> Application</h2>
 <p>In this application section, I’ll delve into the study of change detection in SAR images. While we’ve explored various techniques and methods for change detection in previous lectures, I’ve chosen to focus on a methodology that hasn’t been extensively covered. My aim is to introduce a new approach that offers insights beyond what’s been discussed in class, enriching my understanding and exploration of SAR image analysis for change detection purposes in my latest learning diary entry.</p>
-<p><u><strong>Change Detection in Synthetic Aperture Radar Images based on Image Fusion and Fuzzy Clustering:</strong></u></p>
+<p><u><strong>Change Detection in Synthetic Aperture Radar Images based on Image Fusion and Fuzzy Clustering:</strong></u> <span class="citation" data-cites="gong2012">(<a href="references.html#ref-gong2012" role="doc-biblioref">Gong, Zhou, and Ma 2012</a>)</span></p>
 <p>This paper highlights the challenges in change detection in Synthetic Aperture Radar (SAR) images, primarily due to speckle noise. The paper suggests the use of the ratio operator over subtraction for SAR images to handle speckle noise and calibration errors. To enhance change detection, it introduces image fusion to combine mean-ratio and log-ratio images. Furthermore, it proposes a robust fuzzy clustering algorithm that incorporates spatial context to improve resistance against noise and enhance change detection accuracy.</p>
 <p><strong>Methodology</strong></p>
 <p>For the methodology they proposed a novel approach for change detection in SAR images, comprising two main steps: generating a difference image through image fusion and detecting changed areas in the fused image using an improved Fuzzy C-Means (FCM) algorithm:</p>
@@ -281,15 +300,23 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Change Detection in Synthetic Aperture Radar Images based on Image Fusion and Fuzzy Clustering</strong> (Gong.M, Zhou.Z 2012)</p>
 <p><strong>Change Detection on SAR Images</strong> (R.A. Alagu Raja,K. Vaiyammal 2017).</p>
 <p><strong>Deep Learning-Based Suppression of Speckle-Noise in Synthetic Aperture Radar (SAR) Images: A Comprehensive Review</strong> (Kant Shukla.S, K. Dwivedi.S 2023).</p>
-<p><strong>Overview of SAR Image Change Detection</strong> (Xuan.J, Xin.Z 2021)</p>
 <p><strong>Deep Despeckling of SAR Images to Improve Change Detection Performance</strong> (Ihmeida.M, Shahzad.M 2023).</p>
-<p><strong>Change Detection from Synthetic Aperture Radar Images via Graph-Based Knowledge Supplement Network</strong> (Wang.J, Gao.F 2022)</p>
-<p><strong>Unsupervised SAR Image Change Detection Based on Structural Consistency and CFAR Threshold Estimation</strong> (Zhu.J, Wang.F 2023)</p>
-<p><a href="https://asf.alaska.edu/information/sar-information/what-is-sar/" class="uri">https://asf.alaska.edu/information/sar-information/what-is-sar/</a></p>
-<p><a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar" class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a></p>
-<p><a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar" class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-earthsciencedatasystems2020" class="csl-entry" role="listitem">
+Earth Science Data Systems, NASA. 2020. <span>“What Is Synthetic Aperture Radar? | Earthdata.”</span> <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a>.
+</div>
+<div id="ref-gong2012" class="csl-entry" role="listitem">
+Gong, Maoguo, Zhiqiang Zhou, and Jingjing Ma. 2012. <span>“Change Detection in Synthetic Aperture Radar Images Based on Image Fusion and Fuzzy Clustering.”</span> <em>IEEE Transactions on Image Processing</em> 21 (4): 2141–51. <a href="https://doi.org/10.1109/TIP.2011.2170702">https://doi.org/10.1109/TIP.2011.2170702</a>.
+</div>
+<div id="ref-sar" class="csl-entry" role="listitem">
+<span>“SAR.”</span> n.d. <a href="http://labs.cas.usf.edu/geodesy/sar.html">http://labs.cas.usf.edu/geodesy/sar.html</a>.
+</div>
+<div id="ref-shukla2023" class="csl-entry" role="listitem">
+Shukla, Ashwani Kant, Sanjay K. Dwivedi, Ganesh Chandra, and Raj Shree. 2023. <span>“Deep Learning-Based Suppression of Speckle-Noise in Synthetic Aperture Radar (SAR) Images: A Comprehensive Review.”</span> In, edited by Amit Kumar, Gheorghita Ghinea, Suresh Merugu, and Takako Hashimoto, 693–705. Singapore: Springer Nature. <a href="https://doi.org/10.1007/978-981-19-2358-6_62">https://doi.org/10.1007/978-981-19-2358-6_62</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -529,7 +556,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week 8.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Learning Diary - 7&nbsp; week 7 classification: Indepth</title>
+<title>CASA0023 Learning Diary - 7&nbsp; week 7 classification II: Indepth</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -74,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week 8.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week 8.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -144,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 8.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -181,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></h1>
 </div>
 
 
@@ -200,11 +219,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
 <p>This lecture builds upon the foundational concepts covered in last week’s lecture, which focused on&nbsp;CART,&nbsp;Random Forest, and&nbsp;SVM. However, this time, we’ll cover additional principles such as Object-Based analysis, Sub-Pixel analysis, cross validation, and Spatial cross validation but because object-based analysis and sub-pixel analysis are new to me I will talk about them in my diary.</p>
 <p><strong>Object-Based Image analysis</strong></p>
-<p>Object-based image analysis (OBIA) involves grouping pixels into objects based on spectral similarity or external variables like ownership or soil type. These objects have various attributes such as spectral, shape, and neighborhood characteristics. OBIA allows for the inclusion of landscape knowledge by applying rules to classify objects. For example, identifying a group of trees, grass, and water near dense housing as a city park or distinguishing between forest and individual trees. Compared to traditional spectral image analysis, OBIA offers improved accuracy and detail in classification.</p>
+<p>Object-based image analysis (OBIA) involves grouping pixels into objects based on spectral similarity or external variables like ownership or soil type. These objects have various attributes such as spectral, shape, and neighborhood characteristics. OBIA allows for the inclusion of landscape knowledge by applying rules to classify objects. For example, identifying a group of trees, grass, and water near dense housing as a city park or distinguishing between forest and individual trees. Compared to traditional spectral image analysis, OBIA offers improved accuracy and detail in classification. <span class="citation" data-cites="object-b">(<a href="references.html#ref-object-b" role="doc-biblioref"><span>“Object-Based Image Analysis,”</span> n.d.</a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="object-based-analysis.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption"><strong>Figure (1):</strong> Object-based Analysis</figcaption>
+<figcaption class="figure-caption"><strong>Figure (1):</strong> Object-based Analysis. <span class="citation" data-cites="stefanlang">(<a href="references.html#ref-stefanlang" role="doc-biblioref">Stefan Lang, n.d.</a>)</span></figcaption>
 </figure>
 </div>
 <p><strong>Sub-Pixel analysis</strong></p>
@@ -212,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
-<p>For the application part and after giving a brief about Sub-Pixel analysis and Image-based analysis I will be comparing two studies where each one of them used one of the previous method these two studies are: <u><strong><em>Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images</em></strong></u> and <u><strong>Object-based land cover change detection for cross-sensor images</strong></u></p>
+<p>For the application part and after giving a brief about Sub-Pixel analysis and Image-based analysis I will be comparing two studies where each one of them used one of the previous method these two studies are: <u><strong><em>Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images</em></strong></u> <span class="citation" data-cites="du2014">(<a href="references.html#ref-du2014" role="doc-biblioref">DU et al. 2014</a>)</span> and <u><strong>Object-based land cover change detection for cross-sensor images</strong></u> <span class="citation" data-cites="qin2013">(<a href="references.html#ref-qin2013" role="doc-biblioref">Qin et al. 2013</a>)</span></p>
 <p><u><strong>Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images:</strong></u></p>
 <section id="method" class="level4" data-number="7.2.0.1">
 <h4 data-number="7.2.0.1" class="anchored" data-anchor-id="method"><span class="header-section-number">7.2.0.1</span> Method:</h4>
@@ -314,15 +333,28 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="reflection" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
-<p>Today's lecture was interesting for me because it has expanded my understanding of remote sensing techniques that goes beyond CART, RF, and SVM. Honestly, I got lost in which of these two approaches is more fascinating. &nbsp;In OBIA we approach image analysis is not only based on individual pixels but also by making them into groups of meaningful objects. While Sub-Pixels analysis mainly work on allowing the detection of changes on individual pixels level. The Sub-Pixels method can be useful to use in case of urban environments or transitional ecosystems. I think that in the future this could help in various fields such as environmental monitoring, urban planning (which I find interesting), and disaster management. Furthermore, I believe that it is important to understand the use of these techniques as they might have a crucial role in addressing new challenges such as climate change impacts, habitat loss and urbanization by helping policymakers and stakeholders with detailed information that would help in the decision-making process.</p>
+<p>Today’s lecture was interesting for me because it has expanded my understanding of remote sensing techniques that goes beyond CART, RF, and SVM. Honestly, I got lost in which of these two approaches is more fascinating. &nbsp;In OBIA we approach image analysis is not only based on individual pixels but also by making them into groups of meaningful objects. While Sub-Pixels analysis mainly work on allowing the detection of changes on individual pixels level. The Sub-Pixels method can be useful to use in case of urban environments or transitional ecosystems. I think that in the future this could help in various fields such as environmental monitoring, urban planning (which I find interesting), and disaster management. Furthermore, I believe that it is important to understand the use of these techniques as they might have a crucial role in addressing new challenges such as climate change impacts, habitat loss and urbanization by helping policymakers and stakeholders with detailed information that would help in the decision-making process.</p>
 </section>
 <section id="reference" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">7.4</span> Reference</h2>
 <p><strong>Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images</strong>.(DU P, LIU S 2014)</p>
 <p><strong>Object-based land cover change detection for cross-sensor images.</strong> ( Y. Qin, Z. Niu 2013).</p>
-<p>GIM International (<a href="https://www.gim-international.com/content/article/object-based-image-analysis" class="uri">https://www.gim-international.com/content/article/object-based-image-analysis</a>)</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-du2014" class="csl-entry" role="listitem">
+DU, Peijun, Sicong LIU, Pei LIU, Kun TAN, and Liang CHENG. 2014. <span>“Sub-Pixel Change Detection for Urban Land-Cover Analysis via Multi-Temporal Remote Sensing Images.”</span> <em>Geo-Spatial Information Science</em> 17 (1): 26–38. <a href="https://doi.org/10.1080/10095020.2014.889268">https://doi.org/10.1080/10095020.2014.889268</a>.
+</div>
+<div id="ref-object-b" class="csl-entry" role="listitem">
+<span>“Object-Based Image Analysis.”</span> n.d. <a href="https://www.gim-international.com/content/article/object-based-image-analysis">https://www.gim-international.com/content/article/object-based-image-analysis</a>.
+</div>
+<div id="ref-qin2013" class="csl-entry" role="listitem">
+Qin, Y., Z. Niu, F. Chen, B. Li, and Y. Ban. 2013. <span>“Object-Based Land Cover Change Detection for Cross-Sensor Images.”</span> <em>International Journal of Remote Sensing</em> 34 (19): 6723–37. <a href="https://doi.org/10.1080/01431161.2013.805282">https://doi.org/10.1080/01431161.2013.805282</a>.
+</div>
+<div id="ref-stefanlang" class="csl-entry" role="listitem">
+Stefan Lang, University of Salzburg. n.d. <span>“Object-Based Image Analysis - An Introduction.”</span> <a href="https://eo4geocourses.github.io/PLUS_OBIA-Introduction/#/1">https://eo4geocourses.github.io/PLUS_OBIA-Introduction/#/1</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

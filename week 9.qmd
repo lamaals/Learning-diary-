@@ -10,11 +10,11 @@ In today's lecture, we explored Synthetic Aperture Radar (SAR) technology and co
 
 (SAR) is a radar technology utilized for generating two-dimensional images or three-dimensional reconstructions of various objects, including landscapes. SAR achieves finer spatial resolution by employing the motion of the radar antenna over a target area, which contrasts with the stationary beam-scanning radars traditionally used. Functioning as an active sensor, SAR transmits microwave signals and captures the signals reflected, or backscattered, from the Earth's surface. This capability enables SAR to produce high-resolution images using relatively compact antennas. Notably, SAR possesses unique attributes such as cloud-penetrating capabilities.
 
-![**Figure (1):** Synthetic Aperture Radar (SAR)](week9.gif){fig-align="center" width="400"}
+![**Figure (1):** Synthetic Aperture Radar (SAR). [@sar]](week9.gif){fig-align="center" width="400"}
 
 **SAR Polarization and Scattering Mechanisms**
 
-Polarization refers to the orientation of the plane in which the transmitted electromagnetic wave swings. SAR sensors usually transmit linearly polarized whereby the advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signal strength of different polarizations carries information about the imaged surface structure, based on different types of scattering which are rough surface, volume, and double bounce scattering.
+Polarization refers to the orientation of the plane in which the transmitted electromagnetic wave swings. SAR sensors usually transmit linearly polarized whereby the advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signal strength of different polarizations carries information about the imaged surface structure, based on different types of scattering which are rough surface, volume, and double bounce scattering. [@earthsciencedatasystems2020]
 
 -   Rough surface scattering, such as that caused by bare soil or water, is most sensitive to VV scattering.
 
@@ -24,17 +24,17 @@ Polarization refers to the orientation of the plane in which the transmitted ele
 
 Lastly, as wavelength changes signal penetration depth, it drives the amount of signal attributed to different scattering types.
 
-![**Figure (2):** SAR Polarization and Scattering Source: NASA Earth Data](week9%202.jpg){fig-align="center"}
+![**Figure (2):** SAR Polarization and Scattering. [@earthsciencedatasystems2020]](week9%202.jpg){fig-align="center"}
 
 **Change Detection in SAR**
 
-Change detection in (SAR) images involves identifying changes in land cover over time by examining and contrasting two or more SAR images captured at different times but covering the same geographic region. This method is highly beneficial in remote sensing applications due to SAR's ability to acquire images regardless of weather conditions and its capability to penetrate clouds and darkness. This technique is of high practical value to a large number of applications, such as flood detection, disaster monitoring, urban planning, and land cover data monitoring. However, the inherent speckle noise in SAR images can lead to false alarms and misdetections.
+Change detection in (SAR) images involves identifying changes in land cover over time by examining and contrasting two or more SAR images captured at different times but covering the same geographic region. This method is highly beneficial in remote sensing applications due to SAR's ability to acquire images regardless of weather conditions and its capability to penetrate clouds and darkness. This technique is of high practical value to a large number of applications, such as flood detection, disaster monitoring, urban planning, and land cover data monitoring. However, the inherent speckle noise in SAR images can lead to false alarms and misdetections. [@shukla2023]
 
 ## Application
 
 In this application section, I'll delve into the study of change detection in SAR images. While we've explored various techniques and methods for change detection in previous lectures, I've chosen to focus on a methodology that hasn't been extensively covered. My aim is to introduce a new approach that offers insights beyond what's been discussed in class, enriching my understanding and exploration of SAR image analysis for change detection purposes in my latest learning diary entry.
 
-[**Change Detection in Synthetic Aperture Radar Images based on Image Fusion and Fuzzy Clustering:**]{.underline}
+[**Change Detection in Synthetic Aperture Radar Images based on Image Fusion and Fuzzy Clustering:**]{.underline} [@gong2012]
 
 This paper highlights the challenges in change detection in Synthetic Aperture Radar (SAR) images, primarily due to speckle noise. The paper suggests the use of the ratio operator over subtraction for SAR images to handle speckle noise and calibration errors. To enhance change detection, it introduces image fusion to combine mean-ratio and log-ratio images. Furthermore, it proposes a robust fuzzy clustering algorithm that incorporates spatial context to improve resistance against noise and enhance change detection accuracy.
 
@@ -78,16 +78,4 @@ It was really interesting to cover and go deep in the change detection of SAR im
 
 **Deep Learning-Based Suppression of Speckle-Noise in Synthetic Aperture Radar (SAR) Images: A Comprehensive Review** (Kant Shukla.S, K. Dwivedi.S 2023).
 
-**Overview of SAR Image Change Detection** (Xuan.J, Xin.Z 2021)
-
 **Deep Despeckling of SAR Images to Improve Change Detection Performance** (Ihmeida.M, Shahzad.M 2023).
-
-**Change Detection from Synthetic Aperture Radar Images via Graph-Based Knowledge Supplement Network** (Wang.J, Gao.F 2022)
-
-**Unsupervised SAR Image Change Detection Based on Structural Consistency and CFAR Threshold Estimation** (Zhu.J, Wang.F 2023)
-
-<https://asf.alaska.edu/information/sar-information/what-is-sar/>
-
-<https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar>
-
-<https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar>

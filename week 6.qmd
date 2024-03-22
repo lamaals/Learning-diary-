@@ -12,7 +12,7 @@ Due to the massive amount of data acquired from satellites, it became challengin
 
 ## Application
 
-Google Earth Engine is utilized in various applications and is widely employed globally for diverse studies and analyses. With that said, it is essential to briefly examine the significance of GEE, its functions, applications, advantages, and limitations in remote sensing analysis. This discussion will be based on two papers which are: [***Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review***]{.underline} and [***Google Earth Engine for geo-big data applications: A meta-analysis and systematic review.***]{.underline}
+Google Earth Engine is utilized in various applications and is widely employed globally for diverse studies and analyses. With that said, it is essential to briefly examine the significance of GEE, its functions, applications, advantages, and limitations in remote sensing analysis. This discussion will be based on two papers which are: [***Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review***]{.underline} [@tamiminia2020] and [***Google Earth Engine for geo-big data applications: A meta-analysis and systematic review.***]{.underline} [@amani2020]
 
 #### **Why Google earth engine.**
 
@@ -22,7 +22,7 @@ GEE platform allows users to tap into a vast collection of satellite images and 
 
 Google Earth Engine offers a wide range of functions for performing spectral and spatial operations on single or multiple images. While it supports various pixel-based spectral operations that can be efficiently implemented in parallel on cloud architecture, it has limited support for spatial functions such as filters, edge detection methods, line detection via Hough Transform, and morphological operators due to parallel implementation challenges. However, it provides access to supervised and unsupervised machine learning algorithms including CART, SVM, RF classifiers, and clustering algorithms like K-means, Cascade K-means, X-means, Cobweb, and SNIC for tasks like image classification and segmentation.With access to over 40 years of datasets, GEE enables temporal and change analyses using functions like CCDC, EWMACD, and LandTrendr. These functions facilitate tasks such as continuous change detection, trend analysis, and vegetation analysis. Specialized algorithms like VCT and VERDET are available for analyzing forest disturbances and vegetation changes over time.
 
-![**Figure (1):** Different supporting functions within GEE.](week6-1.png){fig-align="center"}
+![**Figure (1):** Different supporting functions within GEE. [@fig.3.]](week6-1.png){fig-align="center"}
 
 #### GEE Aplication
 

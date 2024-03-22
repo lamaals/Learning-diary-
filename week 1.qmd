@@ -20,17 +20,17 @@ Electromagnetic energy, created by moving charged particles, travels in waves th
 
 ### Sentinel-2 VS Landsat
 
-**Sentinel-2** contains two satellites orbiting around the earth in the same path, but 180° spaced apart. These two satellites have a rapid visit time of 10 days at the equator and a wide area of coverage as they are designed to continuously detect changes in land surface conditions.
+**Sentinel-2** contains two satellites orbiting around the earth in the same path, but 180° spaced apart. These two satellites have a rapid visit time of 10 days at the equator and a wide area of coverage as they are designed to continuously detect changes in land surface conditions. [@sentinel]
 
-**Landsat 8** holds two main instruments which are: the Operational Land Images (OLI) and the Thermal Infrared Sensor (TIRS). These sensors works on providing images of the earth surface at several resolution, and that includes for visible, near-infrared, and short infrared a 30m, for Thermal data 100m, and for panchromatic data a 15m.
+**Landsat 8** holds two main instruments which are: the Operational Land Images (OLI) and the Thermal Infrared Sensor (TIRS). These sensors works on providing images of the earth surface at several resolution, and that includes for visible, near-infrared, and short infrared a 30m, for Thermal data 100m, and for panchromatic data a 15m. [@landsat2021]
 
 ## Application
 
-Landsat and Sentinel 2 have been used extensively in different fields including land use planning and monitoring, emergency response and management, water use monitoring and others. Each one of those two methods has its strengths and to understand those strengths, I will discuss an analysis that was conducted to evaluate and compare two data sources in forest fires mapping which is: [***Evaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia:***]{.underline}
+Landsat and Sentinel 2 have been used extensively in different fields including land use planning and monitoring, emergency response and management, water use monitoring and others. Each one of those two methods has its strengths and to understand those strengths, I will discuss an analysis that was conducted to evaluate and compare two data sources in forest fires mapping which is: [***Evaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia :***]{.underline} [@achour2022]
 
 This analysis compares and assesses spectral indices derived from Sentinel-2 and Landsat-8 OLI imagery and to identify the most appropriate index for each sensor for accurately mapping forest fires, using as a case study two fire events that occurred in summer 2017 in northern Tunisia (Achour et al. 2022, Toujani et al. 2022).
 
-[![Figure (3): Sentinel 2A Multi Spectral Instrument (MSI) and Landsat-8 Operational Land Imager (OLI) satellite images were acquired before (pre-fire) and after (post-fire) the fires from the U.S. Geological Survey (USGS)](application%201.jpg){fig-align="center" width="500"}](https://earthexplorer.usgs.gov/)
+[![**Figure (3):** Sentinel 2A Multi Spectral Instrument (MSI) and Landsat-8 Operational Land Imager (OLI) satellite images were acquired before (pre-fire) and after (post-fire) the fires from the U.S. Geological Survey (USGS)](application%201.jpg){fig-align="center" width="500"}](https://earthexplorer.usgs.gov/)
 
 ### Discussion
 
@@ -54,26 +54,10 @@ The study concluded that (1) regardless of the sensor, spectral indices that inc
 
 ## Reflection
 
-This lecture wasn't easy to digest ***at first,*** as there was a lot of new ideas and terms (Spectral, Spectrum, Spectral Signature...etc ) to learn. when I went through the lecture it was captivating the facts that we learned for example the scattering of EMR and how the process of gathering satellite images is not as easy and simple as i thought, plus it was really interesting knowing why the sky and sea are blue. This lecture opened my eyes to the uses of satellite data and the importance of it and how it can be used in different areas and in very different methods but what was really interesting for me is the paper that i found on the use of satellite images in capturing the socioeconomic disruption during the Ukrainian war. In this study they combined satellite data on nitrogen dioxide (NO2) and carbon dioxide (CO2) to track changes in human activities, as both gases are linked to fossil fuel combustion. the analysis reveals a significant decrease in NO2 levels over major Ukrainian cities, power plants, and industrial areas during the second quarter of 2022, ranging from 15% to 46% compared to the reference period of 2018-2021. They also used the detection of unusual fire which might be likley from shelling rather than agricultural burning.These findings demonstrate the value of satellite observations in monitoring significant societal changes, particularly during conflicts.
+This lecture wasn't easy to digest ***at first,*** as there was a lot of new ideas and terms (Spectral, Spectrum, Spectral Signature...etc ) to learn. when I went through the lecture it was captivating the facts that we learned for example the scattering of EMR and how the process of gathering satellite images is not as easy and simple as i thought, plus it was really interesting knowing why the sky and sea are blue. This lecture opened my eyes to the uses of satellite data and the importance of it and how it can be used in different areas and in very different methods but what was really interesting for me is the paper that i found on the use of satellite images in capturing the socioeconomic disruption during the Ukrainian war. In this study they combined satellite data on nitrogen dioxide (NO2) and carbon dioxide (CO2) to track changes in human activities, as both gases are linked to fossil fuel combustion. the analysis reveals a significant decrease in NO2 levels over major Ukrainian cities, power plants, and industrial areas during the second quarter of 2022, ranging from 15% to 46% compared to the reference period of 2018-2021. They also used the detection of unusual fire which might be likley from shelling rather than agricultural burning [@ialongo2023].These findings demonstrate the value of satellite observations in monitoring significant societal changes, particularly during conflicts.
 
 # References {.unnumbered}
 
 **Evaluation and comparison of Sentinel-2 MSI, Landsat 8 OLI, and EFFIS data for forest fires mapping. Illustrations from the summer 2017 fires in Tunisia.** (Achour.H, Toujani.A 2021).
 
-<https://www.tandfonline.com/doi/full/10.1080/10106049.2021.1980118>
-
-**SENTINEL-2 MISSION GUIDE.**
-
-<https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2>
-
-**LANDSAT 8**
-
-<https://landsat.gsfc.nasa.gov/satellites/landsat-8/>
-
 **Satellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine.** (Ialongo.I, Bun.R 2023).
-
-<https://www.nature.com/articles/s41598-023-42118-w>
-
-**What is Remote Sensing?**
-
-<https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing>

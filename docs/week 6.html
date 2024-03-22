@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -144,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -206,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
-<p>Google Earth Engine is utilized in various applications and is widely employed globally for diverse studies and analyses. With that said, it is essential to briefly examine the significance of GEE, its functions, applications, advantages, and limitations in remote sensing analysis. This discussion will be based on two papers which are: <u><strong><em>Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review</em></strong></u> and <u><strong><em>Google Earth Engine for geo-big data applications: A meta-analysis and systematic review.</em></strong></u></p>
+<p>Google Earth Engine is utilized in various applications and is widely employed globally for diverse studies and analyses. With that said, it is essential to briefly examine the significance of GEE, its functions, applications, advantages, and limitations in remote sensing analysis. This discussion will be based on two papers which are: <u><strong><em>Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review</em></strong></u> <span class="citation" data-cites="tamiminia2020">(<a href="references.html#ref-tamiminia2020" role="doc-biblioref">Tamiminia et al. 2020</a>)</span> and <u><strong><em>Google Earth Engine for geo-big data applications: A meta-analysis and systematic review.</em></strong></u> <span class="citation" data-cites="amani2020">(<a href="references.html#ref-amani2020" role="doc-biblioref">Amani et al. 2020</a>)</span></p>
 <section id="why-google-earth-engine." class="level4" data-number="5.2.0.1">
 <h4 data-number="5.2.0.1" class="anchored" data-anchor-id="why-google-earth-engine."><span class="header-section-number">5.2.0.1</span> <strong>Why Google earth engine.</strong></h4>
 <p>GEE platform allows users to tap into a vast collection of satellite images and geospatial data, spanning over a petabyte in size, all hosted on Google’s powerful computing infrastructure. This setup makes it ideal for conducting in-depth analysis on satellite imagery and remote sensing data. By integrating a comprehensive library of historical and up-to-date satellite imagery with robust APIs, Google Earth Engine empowers users to execute complex geospatial analyses directly in the cloud. This eliminates the need for users to download massive datasets to their local machines, facilitating the efficient processing of large-scale geospatial data. With its seamless access to such a wealth of geospatial information and the ability to perform sophisticated analyses in a cloud-based environment, Google Earth Engine stands out as an invaluable tool for researchers, scientists, and analysts working with satellite imagery and remote sensing data.</p>
@@ -217,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week6-1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (1):</strong> Different supporting functions within GEE.</figcaption>
+<figcaption class="figure-caption"><strong>Figure (1):</strong> Different supporting functions within GEE. <span class="citation" data-cites="fig.3">(<a href="references.html#ref-fig.3" role="doc-biblioref"><strong>fig.3?</strong></a>)</span></figcaption>
 </figure>
 </div>
 </section>
@@ -267,6 +286,14 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.</strong></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-amani2020" class="csl-entry" role="listitem">
+Amani, Meisam, Arsalan Ghorbanian, Seyed Ali Ahmadi, Mohammad Kakooei, Armin Moghimi, S. Mohammad Mirmazloumi, Sayyed Hamed Alizadeh Moghaddam, et al. 2020. <span>“Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 13: 5326–50. <a href="https://doi.org/10.1109/JSTARS.2020.3021052">https://doi.org/10.1109/JSTARS.2020.3021052</a>.
+</div>
+<div id="ref-tamiminia2020" class="csl-entry" role="listitem">
+Tamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush, Sarina Adeli, and Brian Brisco. 2020. <span>“Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 164 (June): 152–70. <a href="https://doi.org/10.1016/j.isprsjprs.2020.04.001">https://doi.org/10.1016/j.isprsjprs.2020.04.001</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

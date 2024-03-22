@@ -10,23 +10,23 @@ During the lecture, we were introduced to classification using remotely-sensed d
 
 A binary decision classification tree method, simplifies decision-making through logical if-then scenarios. It recursively splits input data into groups based on predefined thresholds until reaching terminal nodes (Nods represent decision function ), with the most accurate tree selected. However, CART's effectiveness can be limited by high dimensionality data.
 
-![**Figure (1):** CART source: Medium](images/CART.gif){fig-align="center" width="400"}
+![**Figure (1):** CART. [@malviya2020]](images/CART.gif){fig-align="center" width="400"}
 
 #### Random Forest
 
 An ensemble classifier that combines multiple CART trees. It generates decision trees using random selections of training datasets and variables, providing an unbiased assessment of generalization error. RF selects variables randomly at each node for tree building, with the optimal number of trees typically ranging from 100 to 500. The number of variables is determined by the square of the set of variables.
 
-![**Figure (2):** Random Forest source: Medium](images/Random%20forest.gif){fig-align="center" width="400"}
+![**Figure (2):** Random Forest. [@kalam2021]](images/Random%20forest.gif){fig-align="center" width="400"}
 
 #### Support Vector Machine(SVM)
 
 A supervised learning algorithm used for regression and classification problems. SVM constructs an ideal hyperplane during training to separate classes with the fewest misclassified pixels. It selects support vectors, extreme points that aid in hyperplane creation, using parameters like cost parameter C, Gamma, and kernel functions. Grid search is employed to define C and Gamma parameters, with C significantly influencing support vector selection and SVM performance. The linear kernel is preferred for training on large datasets.
 
-![**Figure (3)**: Support Vector Machine (SVM) source: Medium](images/Support%20Vector.gif){fig-align="center" width="400"}
+![**Figure (3)**: Support Vector Machine (SVM). [@mueller2021]](images/Support%20Vector.gif){fig-align="center" width="400"}
 
 ## Application
 
-Machine learning is extensively employed across various domains including finance, trading technologies, healthcare, and traffic prediction. Exploring its application, particularly in image classification within remote sensing analysis using satellite images, is of great interest for me. Specifically focusing on urban environments, this section compares two studies: [***"Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India"***]{.underline} and [***"Mapping of Land Cover with Optical Images, Supervised Algorithms, and Google Earth Engine".***]{.underline} Both studies evaluate CART, Random Forest, and SVM algorithms for detecting land use and land cover (LULC) patterns.
+Machine learning is extensively employed across various domains including finance, trading technologies, healthcare, and traffic prediction. Exploring its application, particularly in image classification within remote sensing analysis using satellite images, is of great interest for me. Specifically focusing on urban environments, this section compares two studies: [***"Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India"***]{.underline} [@loukika2021]and [***"Mapping of Land Cover with Optical Images, Supervised Algorithms, and Google Earth Engine".***]{.underline} [@pech-may2022] Both studies evaluate CART, Random Forest, and SVM algorithms for detecting land use and land cover (LULC) patterns.
 
 [**Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India:**]{.underline}
 

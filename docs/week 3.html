@@ -163,7 +163,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -234,7 +234,7 @@ div.csl-indent {
 </section>
 <section id="atmospheric-correction" class="level3" data-number="3.1.2">
 <h3 data-number="3.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric Correction</h3>
-<p><strong>Atmospheric correction</strong> is the process of scattering and absorption effect removal which are caused by the atmosphere, thus showing the surface reflectance that represents surface properties.</p>
+<p><strong>Atmospheric correction</strong> is the process of scattering and absorption effect removal which are caused by the atmosphere, thus showing the surface reflectance that represents surface properties. <span class="citation" data-cites="gisgeography2015">(<a href="references.html#ref-gisgeography2015" role="doc-biblioref">GISGeography 2015</a>)</span></p>
 <p><u><strong>Methods to remove the atmosphere effect:</strong></u></p>
 <p><strong>Relative:</strong> This method facilitates the comparison with other images instead of directly removing atmospheric effects by normalising images. Relative correction most common technique is <strong>Dark Object Subtraction (DOS)</strong>, where dark objects with very low reflectance are deducted from the image. This procedure allow the standardization of the images and the mitigation of atmospheric effects.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -243,21 +243,21 @@ div.csl-indent {
 <figcaption class="figure-caption"><strong>Figure (2)</strong> Dark pixel subtraction. <span class="citation" data-cites="mariner">(<a href="references.html#ref-mariner" role="doc-biblioref"><span>“Marine Remote Sensing Toolkit,”</span> n.d.</a>)</span></figcaption>
 </figure>
 </div>
-<p><strong>Absolute:</strong> Includes the evaluation of the atmospheric conditions along with the angles of illumination and observation during the capture of the image in order to assess the level of scattering and absorption for each image band. Using these factors, the correction factors are calculated to modify the data from its original at-sensor values to establish more accurate at-surface values.</p>
+<p><strong>Absolute:</strong> Includes the evaluation of the atmospheric conditions along with the angles of illumination and observation during the capture of the image in order to assess the level of scattering and absorption for each image band. Using these factors, the correction factors are calculated to modify the data from its original at-sensor values to establish more accurate at-surface values. <span class="citation" data-cites="atmosphe">(<a href="references.html#ref-atmosphe" role="doc-biblioref"><span>“Atmospheric Remote Sensing Toolkit,”</span> n.d.</a>)</span></p>
 <p><strong>Empirical line method:</strong> This technique provides an replacement to radiative transfer modelling approaches. It offers a clear approach to calibrating surface reflectance, unless the accessibility of calibration measurements that are static over time is guaranteed.</p>
 <p><u><strong>Phases of Atmospheric Correction</strong></u></p>
-<p>Atmospheric correction is a two-phase process. In the initial phase, Digital Numbers (DNs) are transformed into radiance, and subsequently into top-of-atmosphere radiance. In the subsequent phase, top-of-atmosphere reflectance is converted to surface reflectance, also known as bottom-of-atmosphere reflectance or top-of-canopy reflectance, particularly in vegetation studies. The output image from this process is referred to as atmospherically corrected.</p>
+<p><strong>Atmospheric Correction</strong> is a process that contain two phases. In the first phase, Digital Numbers (DNs) are converted into radiance, and after that into top-of-atmosphere. In the next phase, top-of-atmosphere reflectance is transformed into surface reflectance (known as bottom-of-atmosphere reflectance) this is also known as top-of-canopy reflectance, especially in vegetation studies.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="phases of atmospheric correction.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><strong>Figure (3)</strong> Phases of Atmospheric correction. [@(26)atm]</figcaption>
+<figcaption class="figure-caption"><strong>Figure (3)</strong> Phases of Atmospheric correction. <span class="citation" data-cites="26atm">(<a href="references.html#ref-26atm" role="doc-biblioref"><strong>26atm?</strong></a>)</span></figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
-<p>Applying atmospheric corrections on satellite images is a crucial step that should be performed before conducting any further analysis or processing using those images. However, as we saw earlier, there are multiple approaches with different techniques that varies from image-based empirical correction to model-based methods. Each one of these techniques has its strength and weakness and, in this section, we will highlight two main studies that compared between different approaches like (QUAC, FLAASH and DOS). Those studies are <strong>“<u><em>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery</em></u>”</strong> (Shi, Mao, 2016) and <strong>“<u><em>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Image</em>s</u>”</strong> (Niraj, Gupta 2022).</p>
+<p>Applying atmospheric corrections on satellite images is a crucial step that should be performed before conducting any further analysis or processing using those images. However, as we saw earlier, there are multiple approaches with different techniques that varies from image-based empirical correction to model-based methods. Each one of these techniques has its strength and weakness and, in this section, we will highlight two main studies that compared between different approaches like (QUAC, FLAASH and DOS). Those studies are <strong>“<u><em>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery</em></u>”</strong> <span class="citation" data-cites="shi2016">(<a href="references.html#ref-shi2016" role="doc-biblioref">Shi et al. 2016</a>)</span> and <strong>“<u><em>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Image</em>s</u>”</strong> <span class="citation" data-cites="niraj2022">(<a href="references.html#ref-niraj2022" role="doc-biblioref">Niraj, Gupta, and Shukla 2022</a>)</span>.</p>
 <p><u><strong>Comparison for HICO hyperspectral imagery paper:</strong></u></p>
 <p>This study concludes that all three types of corrections (FLAASH, QUAC, DOS) can remove the effect of atmosphere for HICO hyperspectral image. It also confirms that based on analysing the situ data, FLAASH model have a better performance than QUAC and DOS methods for reducing effect of atmosphere HICO images. Having said that, both QUAC and DOS depend on less input parameters and their computational speed is much faster than FLAASH.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -289,27 +289,31 @@ div.csl-indent {
 </section>
 <section id="reference" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">3.4</span> Reference</h2>
-<p>What is Atmospheric Correction in Remote Sensing?</p>
-<p>(<a href="https://gisgeography.com/atmospheric-correction/" class="uri">https://gisgeography.com/atmospheric-correction/</a>)</p>
-<p>Atmospheric Correction</p>
-<p>(<a href="https://www.linkedin.com/pulse/atmospheric-correction-dinesh-shrestha/" class="uri">https://www.linkedin.com/pulse/atmospheric-correction-dinesh-shrestha/</a>)</p>
-<p>Remote Sensing Research Center</p>
-<p>(<a href="https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/atmospheric/resources/fundamentals/corrections/physics-based.html#:~:text=Absolute%20atmospheric%20corrections,sensor%20to%20at%2Dsurface%20values." class="uri">https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/atmospheric/resources/fundamentals/corrections/physics-based.html#:~:text=Absolute%20atmospheric%20corrections,sensor%20to%20at%2Dsurface%20values.</a>)</p>
-<p>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery(Shi, Mao, 2016)</p>
-<p>()</p>
-<p>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Images (Niraj, Gupta 2022).</p>
-<p>()</p>
+<p><strong>Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery</strong> (Shi, Mao, 2016).</p>
+<p><strong>A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Images</strong> (Niraj, Gupta 2022).</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-atmosphe" class="csl-entry" role="listitem">
+<span>“Atmospheric Remote Sensing Toolkit.”</span> n.d. <a href="https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/atmospheric/resources/fundamentals/corrections/physics-based.html">https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/atmospheric/resources/fundamentals/corrections/physics-based.html</a>.
+</div>
 <div id="ref-fagan2024" class="csl-entry" role="listitem">
 Fagan, Matthew E., and Ruth S. DeFries. 2024. <span>“Remote Sensing and Image Processing.”</span> In, edited by Samuel M. Scheiner, 432–45. Oxford: Academic Press. <a href="https://doi.org/10.1016/B978-0-12-822562-2.00060-8">https://doi.org/10.1016/B978-0-12-822562-2.00060-8</a>.
 </div>
 <div id="ref-geometri" class="csl-entry" role="listitem">
 <span>“Geometric Corrections - AWF-Wiki.”</span> n.d. <a href="http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections">http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections</a>.
 </div>
+<div id="ref-gisgeography2015" class="csl-entry" role="listitem">
+GISGeography. 2015. <span>“What Is Atmospheric Correction in Remote Sensing?”</span> <a href="https://gisgeography.com/atmospheric-correction/">https://gisgeography.com/atmospheric-correction/</a>.
+</div>
 <div id="ref-mariner" class="csl-entry" role="listitem">
 <span>“Marine Remote Sensing Toolkit.”</span> n.d. <a href="https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/marine/resources/fundamentals/corrections/atmospheric_relative-1.html">https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/marine/resources/fundamentals/corrections/atmospheric_relative-1.html</a>.
+</div>
+<div id="ref-niraj2022" class="csl-entry" role="listitem">
+Niraj, K. C., Sharad Kumar Gupta, and Dericks Praise Shukla. 2022. <span>“A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Images.”</span> <em>Journal of the Indian Society of Remote Sensing</em> 50 (12): 2503–21. <a href="https://doi.org/10.1007/s12524-022-01616-6">https://doi.org/10.1007/s12524-022-01616-6</a>.
+</div>
+<div id="ref-shi2016" class="csl-entry" role="listitem">
+Shi, Liangliang, Zhihua Mao, Peng Chen, Sha’ou Han, Fang Gong, and Qiankun Zhu. 2016. <span>“Remote Sensing of the Ocean, Sea Ice, Coastal Waters, and Large Water Regions 2016.”</span> In, 9999:259–63. SPIE. <a href="https://doi.org/10.1117/12.2241368">https://doi.org/10.1117/12.2241368</a>.
 </div>
 </div>
 </section>

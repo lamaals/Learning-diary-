@@ -1,5 +1,5 @@
 ---
-title: "week 7 classification: Indepth "
+title: "week 7 classification II: Indepth "
 ---
 
 ## Summary
@@ -8,9 +8,9 @@ This lecture builds upon the foundational concepts covered in last week's lectur
 
 **Object-Based Image analysis**
 
-Object-based image analysis (OBIA) involves grouping pixels into objects based on spectral similarity or external variables like ownership or soil type. These objects have various attributes such as spectral, shape, and neighborhood characteristics. OBIA allows for the inclusion of landscape knowledge by applying rules to classify objects. For example, identifying a group of trees, grass, and water near dense housing as a city park or distinguishing between forest and individual trees. Compared to traditional spectral image analysis, OBIA offers improved accuracy and detail in classification.
+Object-based image analysis (OBIA) involves grouping pixels into objects based on spectral similarity or external variables like ownership or soil type. These objects have various attributes such as spectral, shape, and neighborhood characteristics. OBIA allows for the inclusion of landscape knowledge by applying rules to classify objects. For example, identifying a group of trees, grass, and water near dense housing as a city park or distinguishing between forest and individual trees. Compared to traditional spectral image analysis, OBIA offers improved accuracy and detail in classification. [@object-b]
 
-![**Figure (1):** Object-based Analysis](object-based-analysis.png){fig-align="center" width="600"}
+![**Figure (1):** Object-based Analysis. [@stefanlang]](object-based-analysis.png){fig-align="center" width="600"}
 
 **Sub-Pixel analysis**
 
@@ -18,7 +18,7 @@ Sub-pixel analysis in remote sensing involves examining the spectral composition
 
 ## Application
 
-For the application part and after giving a brief about Sub-Pixel analysis and Image-based analysis I will be comparing two studies where each one of them used one of the previous method these two studies are: [***Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images***]{.underline} and [**Object-based land cover change detection for cross-sensor images**]{.underline}
+For the application part and after giving a brief about Sub-Pixel analysis and Image-based analysis I will be comparing two studies where each one of them used one of the previous method these two studies are: [***Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images***]{.underline} [@du2014] and [**Object-based land cover change detection for cross-sensor images**]{.underline} [@qin2013]
 
 [**Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images:**]{.underline}
 
@@ -100,12 +100,10 @@ Both studies propose distinct methodologies for analyzing land cover changes usi
 
 ## Reflection
 
-Today\'s lecture was interesting for me because it has expanded my understanding of remote sensing techniques that goes beyond CART, RF, and SVM. Honestly, I got lost in which of these two approaches is more fascinating.  In OBIA we approach image analysis is not only based on individual pixels but also by making them into groups of meaningful objects. While Sub-Pixels analysis mainly work on allowing the detection of changes on individual pixels level. The Sub-Pixels method can be useful to use in case of urban environments or transitional ecosystems. I think that in the future this could help in various fields such as environmental monitoring, urban planning (which I find interesting), and disaster management. Furthermore, I believe that it is important to understand the use of these techniques as they might have a crucial role in addressing new challenges such as climate change impacts, habitat loss and urbanization by helping policymakers and stakeholders with detailed information that would help in the decision-making process.
+Today's lecture was interesting for me because it has expanded my understanding of remote sensing techniques that goes beyond CART, RF, and SVM. Honestly, I got lost in which of these two approaches is more fascinating.  In OBIA we approach image analysis is not only based on individual pixels but also by making them into groups of meaningful objects. While Sub-Pixels analysis mainly work on allowing the detection of changes on individual pixels level. The Sub-Pixels method can be useful to use in case of urban environments or transitional ecosystems. I think that in the future this could help in various fields such as environmental monitoring, urban planning (which I find interesting), and disaster management. Furthermore, I believe that it is important to understand the use of these techniques as they might have a crucial role in addressing new challenges such as climate change impacts, habitat loss and urbanization by helping policymakers and stakeholders with detailed information that would help in the decision-making process.
 
 ## Reference
 
 **Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images**.(DU P, LIU S 2014)
 
 **Object-based land cover change detection for cross-sensor images.** ( Y. Qin, Z. Niu 2013).
-
-GIM International (<https://www.gim-international.com/content/article/object-based-image-analysis>)

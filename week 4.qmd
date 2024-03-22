@@ -8,23 +8,17 @@ In week 4, the primary emphasis was on utilizing remote sensing to accomplish po
 
 I am deeply intrigued by the observation and analysis of cities affected by conflict. I am convinced that leveraging satellite imagery to assess the economic, environmental, and social repercussions of war plays a vital role in formulating decisions that benefit the city's well-being. This may help urban planners in implementing effective solutions for post-war urban development. Hence, I have chosen to study the impact of war on the socio-economic, environmental, and building damage aspects of Ukraine.
 
-According to **United Nations Urban agenda:**
+As highlighted in the **Sustainable Development Goals** agenda:
 
--   We recognize that urban form, infrastructure and building design are among the greatest drivers of cost and resource efficiencies, through the benefits of economy of scale and agglomeration and by fostering energy efficiency, renewable energy, **resilience**, productivity, **environmental protection** and sustainable growth in the **urban economy**.
-
--   sustainable management of natural resources in cities and human settlements in a manner that protects and improves the urban **ecosystem** and **environmental services**, **reduces greenhouse gas emissions and air pollution** and promotes disaster risk reduction and management,
-
-Also highlighted in the **Sustainable Development Goals** agenda:
-
-**Goal 11:** Make cities and human settlements inclusive, safe, **resilient** and sustainable.In fact, sustainable development in cities is critical to achieving most of Agenda 2030.
+**Goal 11:** Make cities and human settlements inclusive, safe, **resilient** and sustainable.In fact, sustainable development in cities is critical to achieving most of Agenda 2030. [@universa]
 
 ## Application
 
-Wars tend to have a series of effects and outcomes, the war on Ukraine has a massive impact on the economics of the country, just in the first year of the conflict Ukraine saw a devastating 30-35% decline in GDP, While there is a projected 0.5% GDP growth for 2023, it remains significantly below pre-war levels. The Ukraine economic deterioration is one of many side effects of war such as people displacement, infrastructure damage, pollution, and agriculture damage.... etc.
+Wars tend to have a series of effects and outcomes, the war on Ukraine has a massive impact on the economics of the country, just in the first year of the conflict Ukraine saw a devastating 30-35% decline in GDP, While there is a projected 0.5% GDP growth for 2023. The Ukraine economic deterioration is one of many side effects of war such as people displacement, infrastructure damage, pollution, and agriculture damage.... etc.
 
-The focus of the Sustainable Development Goals (SDGs) and the new agenda is to prioritize the development of cities that exhibit resilience, environmental sustainability, and economic growth in urban areas. Therefore, it was appropriate to highlight Ukraine, a country in conflict, as a case study. This emphasis is necessary to navigate the crisis and ensure the well-being of its residents by fostering a post-war process that creates a more resilient city. This approach in Ukraine involves maintaining economic resilience, addressing environmental risks, and providing affordable housing for displaced people.
+The focus of the new agenda is to prioritize the development of cities that exhibit resilience, environmental sustainability, and economic growth in urban areas. Therefore, it was appropriate to highlight Ukraine, a country in conflict, as a case study.
 
-The use of remotely sensed data would be appropriate in this sensitive condition, as it can provide accurate information about the situation. This was shown by some of the studies conducted on Ukraine to monitor the socioeconomic change, air pollution, infrastructure damage, agriculture change assessment, and aid refugee relief operations. For this week, I will focus on a single paper while also recommending other remote sensing methods that could aid in studying the impact of wars. This paper details the method used for damage assessment : ***War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images*** (Aimaiti, Koch 2022). In week 4 I'm only considering one paper but i will suggest other remote sensing methods that would help in studying the impact of wars.
+The use of remotely sensed data would be appropriate in this sensitive condition, as it can provide accurate information about the situation. This was shown by some of the studies conducted on Ukraine to monitor the socioeconomic change, air pollution, infrastructure damage, agriculture change assessment, and aid refugee relief operations. For this week, I will focus on a single paper while also recommending other remote sensing methods that could aid in studying the impact of wars. This paper details the method used for damage assessment : ***War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images*** [@aimaiti2022]. In week 4 I'm only considering one paper but i will suggest other remote sensing methods that would help in studying the impact of wars.
 
 [**War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images:**]{.underline}
 
@@ -66,17 +60,17 @@ This study utilized Sentinel-1 and Sentinel-2 data to assess damage in Kyiv duri
 
 #### [**Other methods that can be implemented in conflict zones using remote sensed data:**]{.underline}
 
-[**Evaluation of Socio-Economic Consequences of war:**]{.underline}
+[**Evaluation of Socio-Economic Consequences of war :**]{.underline}
 
 This can be done through the use of couple of methods like:
 
--   using satellite observations of nitrogen dioxide (NO2) and carbon dioxide (CO2) to monitor changes in human activities, such as fossil fuel combustion, power generation, and industrial production, during the conflict.
+-   using satellite observations of nitrogen dioxide (NO2) and carbon dioxide (CO2) to monitor changes in human activities, such as fossil fuel combustion, power generation, and industrial production, during the conflict. [@ialongo2023]
 
 -   Distinct fire and thermal anomaly patterns due to military activities, contrasting with past agricultural-related fires. These patterns, can be confirmed by Sentinel 2 imagery, carry significant socio-economic implications, straining recovery efforts and requiring resource allocation based on various factors.
 
 -   Satellite data from the VIIRS thermal imager utilization to monitor socio-economic developments, using Total Light Intensity (TLI) serving as an indicator of night illumination, reflecting economic activity, population density, and electricity consumption.
 
-[**Monitor environment and air quality:**]{.underline}
+[**Monitor environment and air quality**]{.underline} [@savenets2023][**:**]{.underline}
 
 -   Employing NO2 and CO satellite data, filtering the data fields using a quality assurance index and binned into regular grids for reliability and comparison.
 
@@ -90,16 +84,8 @@ Conducting research on policies has deepened my understanding of how remote sens
 
 ## Reference
 
-***War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images*** (Aimaiti, Koch 2022).
+**War Related Building Damage Assessment in Kyiv, Ukraine, Using Sentinel-1 Radar and Sentinel-2 Optical Images** (Aimaiti, Koch 2022).
 
-***Satellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine*** (Ialongo, Hakkaraine 2022).
+**Satellites capture socioeconomic disruptions during the 2022 full‑scale war in Ukraine** (Ialongo, Hakkaraine 2022).
 
-***Use of Satellite Information for Evaluation of Socio-Economic Consequences of the War in Ukraine*** (Yelistratova, L. O., Apostolov, O. A. 2022).
-
-***Monitoring and assessment of the scale of destruction by remote sensing methods during the war in Ukraine*** (Ye. Butenko, S. Petrychenko 2023).
-
-***Remotely visible impacts on air quality after a year-round full-scale Russian invasion of Ukraine*** (Savenets, Osadchyi 2023).
-
-***United Nations New Urban Agenda***
-
-***Universal Sustainable Development Goals***
+**Remotely visible impacts on air quality after a year-round full-scale Russian invasion of Ukraine** (Savenets, Osadchyi 2023).

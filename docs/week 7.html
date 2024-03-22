@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -144,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week 8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/CART.gif" class="img-fluid figure-img" width="400"></p>
-<figcaption class="figure-caption"><strong>Figure (1):</strong> CART source: Medium</figcaption>
+<figcaption class="figure-caption"><strong>Figure (1):</strong> CART. <span class="citation" data-cites="malviya2020">(<a href="references.html#ref-malviya2020" role="doc-biblioref">Malviya 2020</a>)</span></figcaption>
 </figure>
 </div>
 </section>
@@ -215,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Random forest.gif" class="img-fluid figure-img" width="400"></p>
-<figcaption class="figure-caption"><strong>Figure (2):</strong> Random Forest source: Medium</figcaption>
+<figcaption class="figure-caption"><strong>Figure (2):</strong> Random Forest. <span class="citation" data-cites="kalam2021">(<a href="references.html#ref-kalam2021" role="doc-biblioref">Kalam 2021</a>)</span></figcaption>
 </figure>
 </div>
 </section>
@@ -225,14 +244,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Support Vector.gif" class="img-fluid figure-img" width="400"></p>
-<figcaption class="figure-caption"><strong>Figure (3)</strong>: Support Vector Machine (SVM) source: Medium</figcaption>
+<figcaption class="figure-caption"><strong>Figure (3)</strong>: Support Vector Machine (SVM). <span class="citation" data-cites="mueller2021">(<a href="references.html#ref-mueller2021" role="doc-biblioref">Mueller 2021</a>)</span></figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="application" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
-<p>Machine learning is extensively employed across various domains including finance, trading technologies, healthcare, and traffic prediction. Exploring its application, particularly in image classification within remote sensing analysis using satellite images, is of great interest for me. Specifically focusing on urban environments, this section compares two studies: <u><strong><em>“Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India”</em></strong></u> and <u><strong><em>“Mapping of Land Cover with Optical Images, Supervised Algorithms, and Google Earth Engine”.</em></strong></u> Both studies evaluate CART, Random Forest, and SVM algorithms for detecting land use and land cover (LULC) patterns.</p>
+<p>Machine learning is extensively employed across various domains including finance, trading technologies, healthcare, and traffic prediction. Exploring its application, particularly in image classification within remote sensing analysis using satellite images, is of great interest for me. Specifically focusing on urban environments, this section compares two studies: <u><strong><em>“Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India”</em></strong></u> <span class="citation" data-cites="loukika2021">(<a href="references.html#ref-loukika2021" role="doc-biblioref">Loukika, Keesara, and Sridhar 2021</a>)</span>and <u><strong><em>“Mapping of Land Cover with Optical Images, Supervised Algorithms, and Google Earth Engine”.</em></strong></u> <span class="citation" data-cites="pech-may2022">(<a href="references.html#ref-pech-may2022" role="doc-biblioref">Pech-May et al. 2022</a>)</span> Both studies evaluate CART, Random Forest, and SVM algorithms for detecting land use and land cover (LULC) patterns.</p>
 <p><u><strong>Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India:</strong></u></p>
 <p>This study aims to utilize machine learning algorithms on Google Earth Engine to classify land use and land cover (LULC) in the Munneru River Basin, India, comparing support vector machine (SVM), random forest (RF), and classification and regression trees (CART). Leveraging Earth observation data from Landsat-8 and Sentinel-2 satellite images, the analysis meticulously considers spatial resolutions and cloud cover criteria. Spectral bands from these satellites are used to classify LULC into five primary classes: water bodies, forests, barren lands, vegetation, and built-up areas. Orthorectified images with minimal cloud cover are processed using cloud mask algorithms, and yearly means of NDVI and NDWI indices are calculated to support classification. RF, CART, and SVM are then applied for comprehensive LULC analysis of the study area.</p>
 <section id="method" class="level4" data-number="6.2.0.1">
@@ -307,6 +326,23 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Mapping of Land Cover with Optical Images, Supervised Algorithms, and Google Earth Engine</strong> (Pech-May F, Aquino-Santos R 2022).</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-kalam2021" class="csl-entry" role="listitem">
+Kalam, Nazhim. 2021. <span>“Random Forest Algorithm Quick Breakdown.”</span> <a href="https://nazhimkalam.medium.com/random-forest-algorithm-1c9235e9bc84">https://nazhimkalam.medium.com/random-forest-algorithm-1c9235e9bc84</a>.
+</div>
+<div id="ref-loukika2021" class="csl-entry" role="listitem">
+Loukika, Kotapati Narayana, Venkata Reddy Keesara, and Venkataramana Sridhar. 2021. <span>“Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India.”</span> <em>Sustainability</em> 13 (24): 13758. <a href="https://doi.org/10.3390/su132413758">https://doi.org/10.3390/su132413758</a>.
+</div>
+<div id="ref-malviya2020" class="csl-entry" role="listitem">
+Malviya, Nikita. 2020. <span>“DECISION TREE.”</span> <a href="https://medium.com/analytics-vidhya/decision-tree-2855f7e198f0">https://medium.com/analytics-vidhya/decision-tree-2855f7e198f0</a>.
+</div>
+<div id="ref-mueller2021" class="csl-entry" role="listitem">
+Mueller, Vincent. 2021. <span>“Support Vector Machines, Illustrated.”</span> <a href="https://towardsdatascience.com/support-vector-machines-illustrated-b48a32c56388">https://towardsdatascience.com/support-vector-machines-illustrated-b48a32c56388</a>.
+</div>
+<div id="ref-pech-may2022" class="csl-entry" role="listitem">
+Pech-May, Fernando, Raúl Aquino-Santos, German Rios-Toledo, and Juan Pablo Francisco Posadas-Durán. 2022. <span>“Mapping of Land Cover with Optical Images, Supervised Algorithms, and Google Earth Engine.”</span> <em>Sensors</em> 22 (13): 4729. <a href="https://doi.org/10.3390/s22134729">https://doi.org/10.3390/s22134729</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -551,7 +587,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week 8.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification: Indepth</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week 7 classification II: Indepth</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

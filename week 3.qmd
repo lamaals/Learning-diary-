@@ -14,7 +14,7 @@ First the coordination's of the dataset are fed into a mathematical model in ord
 
 ### Atmospheric Correction
 
-**Atmospheric correction** is the process of scattering and absorption effect removal which are caused by the atmosphere, thus showing the surface reflectance that represents surface properties.
+**Atmospheric correction** is the process of scattering and absorption effect removal which are caused by the atmosphere, thus showing the surface reflectance that represents surface properties. [@gisgeography2015]
 
 [**Methods to remove the atmosphere effect:**]{.underline}
 
@@ -22,19 +22,19 @@ First the coordination's of the dataset are fed into a mathematical model in ord
 
 ![**Figure (2)** Dark pixel subtraction. [@mariner]](atmospheric_relative.jpg){fig-align="center"}
 
-**Absolute:** Includes the evaluation of the atmospheric conditions along with the angles of illumination and observation during the capture of the image in order to assess the level of scattering and absorption for each image band. Using these factors, the correction factors are calculated to modify the data from its original at-sensor values to establish more accurate at-surface values.
+**Absolute:** Includes the evaluation of the atmospheric conditions along with the angles of illumination and observation during the capture of the image in order to assess the level of scattering and absorption for each image band. Using these factors, the correction factors are calculated to modify the data from its original at-sensor values to establish more accurate at-surface values. [@atmosphe]
 
 **Empirical line method:** This technique provides an replacement to radiative transfer modelling approaches. It offers a clear approach to calibrating surface reflectance, unless the accessibility of calibration measurements that are static over time is guaranteed.
 
 [**Phases of Atmospheric Correction**]{.underline}
 
-Atmospheric correction is a two-phase process. In the initial phase, Digital Numbers (DNs) are transformed into radiance, and subsequently into top-of-atmosphere radiance. In the subsequent phase, top-of-atmosphere reflectance is converted to surface reflectance, also known as bottom-of-atmosphere reflectance or top-of-canopy reflectance, particularly in vegetation studies. The output image from this process is referred to as atmospherically corrected.
+**Atmospheric Correction** is a process that contain two phases. In the first phase, Digital Numbers (DNs) are converted into radiance, and after that into top-of-atmosphere. In the next phase, top-of-atmosphere reflectance is transformed into surface reflectance (known as bottom-of-atmosphere reflectance) this is also known as top-of-canopy reflectance, especially in vegetation studies.
 
-![**Figure (3)** Phases of Atmospheric correction. [@(26)atm]](phases%20of%20atmospheric%20correction.png){fig-align="center"}
+![**Figure (3)** Phases of Atmospheric correction. [@26atm]](phases%20of%20atmospheric%20correction.png){fig-align="center"}
 
 ## Application
 
-Applying atmospheric corrections on satellite images is a crucial step that should be performed before conducting any further analysis or processing using those images. However, as we saw earlier, there are multiple approaches with different techniques that varies from image-based empirical correction to model-based methods. Each one of these techniques has its strength and weakness and, in this section, we will highlight two main studies that compared between different approaches like (QUAC, FLAASH and DOS). Those studies are **"[*Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery*]{.underline}"** (Shi, Mao, 2016) and **"[*A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Image*s]{.underline}"** (Niraj, Gupta 2022).
+Applying atmospheric corrections on satellite images is a crucial step that should be performed before conducting any further analysis or processing using those images. However, as we saw earlier, there are multiple approaches with different techniques that varies from image-based empirical correction to model-based methods. Each one of these techniques has its strength and weakness and, in this section, we will highlight two main studies that compared between different approaches like (QUAC, FLAASH and DOS). Those studies are **"[*Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery*]{.underline}"** [@shi2016] and **"[*A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Image*s]{.underline}"** [@niraj2022].
 
 [**Comparison for HICO hyperspectral imagery paper:**]{.underline}
 
@@ -62,22 +62,6 @@ To be honest, this lecture was quite challenging and lengthy, making it difficul
 
 ## Reference
 
-What is Atmospheric Correction in Remote Sensing?
+**Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery** (Shi, Mao, 2016).
 
-(<https://gisgeography.com/atmospheric-correction/>)
-
-Atmospheric Correction
-
-(<https://www.linkedin.com/pulse/atmospheric-correction-dinesh-shrestha/>)
-
-Remote Sensing Research Center
-
-(<https://sees-rsrc.science.uq.edu.au/rstoolkit/en/html/atmospheric/resources/fundamentals/corrections/physics-based.html#:~:text=Absolute%20atmospheric%20corrections,sensor%20to%20at%2Dsurface%20values.>)
-
-Comparison and evaluation of atmospheric correction algorithms of QUAC, DOS and FLAASH for HICO hyperspectral imagery(Shi, Mao, 2016)
-
-()
-
-A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Images (Niraj, Gupta 2022).
-
-()
+**A Comparison of Image-Based and Physics-Based Atmospheric Correction Methods for Extracting Snow and Vegetation Cover in Nepal Himalayas Using Landsat 8 OLI Images** (Niraj, Gupta 2022).
