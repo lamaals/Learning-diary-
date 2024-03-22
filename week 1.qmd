@@ -6,7 +6,7 @@ title: "Week 1 Remote sensing: an Arial adventure"
 
 For the first lecture in this module, we got introduced to the world of remote sensing cities, where we discovered the methods used for data collection using sensors that are mounted on diverse platforms (space-borne/airborne). Then we discussed the two types of sensors: passive which perceive natural radiation, and active, which radiate their own radiation. Then we explored the differences in terms of spectral bands, spatial resolution, and revisit frequency between Sentinel 2 and Landsat satellites. Finally, the attractive part for me was to know that electromagnetic radiation can be obstructed by surfaces or atmosphere which cause absorption,transmission, or scattering.
 
-[![Figure (1): Active and Passive sensors.](active%20and%20passive%20sensors%20.gif){fig-align="center" width="500"}](https://www.balamis.com/technology/)
+[![Figure (1): Active and Passive sensors. [@technolo]](active%20and%20passive%20sensors%20.gif){fig-align="center" width="500"}](https://www.balamis.com/technology/)
 
 ### Remote sensing definition
 
@@ -16,7 +16,7 @@ According to NASA "Remote sensing is the acquiring of information from a distanc
 
 Electromagnetic energy, created by moving charged particles, travels in waves through space and the atmosphere. These waves vary in length and frequency; shorter waves have higher frequencies. Electromagnetic waves might get obstructed by a surface or atmosphere which cause scattering for the short wave such as blues and then it reflects back to be recorded and processed to information/data.
 
-[![Figure (2): the remote sensing process.](4-1-Remote-Sensing-Process-1024x455.png){fig-align="center" width="500"}](https://paititi.info/research-technology/remote-sensing-from-space/)
+[![Figure (2): the remote sensing process. [@remotes]](4-1-Remote-Sensing-Process-1024x455.png){fig-align="center" width="500"}](https://paititi.info/research-technology/remote-sensing-from-space/)
 
 ### Sentinel-2 VS Landsat
 
