@@ -12,5 +12,3 @@ xaringanExtra::embed_xaringan(
   ratio = "16:9")
 
 ```
-
-https://lamaals.github.io/remotely-sensing-presentation-/

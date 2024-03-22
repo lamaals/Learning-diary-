@@ -64,7 +64,7 @@ This can be done through the use of couple of methods like:
 
 -   Satellite data from the VIIRS thermal imager utilization to monitor socio-economic developments, using Total Light Intensity (TLI) serving as an indicator of night illumination, reflecting economic activity, population density, and electricity consumption.
 
-[**Monitor environment and air quality**]{.underline} [@savenets2023]\[**:**\]{.underline}
+[**Monitor environment and air quality**]{.underline} [@savenets2023]
 
 -   Employing NO2 and CO satellite data, filtering the data fields using a quality assurance index and binned into regular grids for reliability and comparison.
 
