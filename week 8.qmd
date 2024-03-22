@@ -18,7 +18,7 @@ Sub-pixel analysis in remote sensing involves examining the spectral composition
 
 ## Application
 
-For the application part and after giving a brief about Sub-Pixel analysis and Image-based analysis I will be comparing two studies where each one of them used one of the previous method these two studies are: [***Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images***]{.underline} [@du2014] and [**Object-based land cover change detection for cross-sensor images**]{.underline}
+For the application part and after giving a brief about Sub-Pixel analysis and Image-based analysis I will be comparing two studies where each one of them used one of the previous method these two studies are: [***Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images***]{.underline} [@du2014] and [**Object-based land cover change detection for cross-sensor images**]{.underline} [@qin2013]
 
 [**Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images:**]{.underline}
 
@@ -44,7 +44,7 @@ Determining change information at the sub-pixel level involves analysing the cha
 
 Change intensity, a measure of change probability, aids in detecting potential changes. After identifying changed pixels, intensity is categorized into different levels. Higher intensity values identify significant changes, indicating a greater likelihood of real changes within urban areas.
 
-![**Figure (2):** Flowchart of the proposed sub-pixel level change detection approach.](Sub-pixel1.png){width="600"}
+![**Figure (2):** Flowchart of the proposed sub-pixel level change detection approach. ](Sub-pixel1.png){width="600"}
 
 #### **Experiment:**
 

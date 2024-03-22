@@ -24,9 +24,6 @@ book:
   google-analytics:
     tracking-id: "G-5LZK055F2X"
     anonymize-ip: true
-
-
-    
   date: "30/01/2024"
   chapters:
     - index.qmd
